@@ -1,0 +1,75 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+
+
+
+<category>
+    <pattern>si</pattern>
+    <that>SEI PRONTO *</that>
+    <template>Pronti, ti spiego subito:
+    Immedesimati in un gladiatore! Sei stanco di essere utilizzato
+    per combattere ed intrattenere gli spettatori. Rischi la vita
+    ogni giorno per accontentare le loro strane forme di divertimento.
+    Una notte decidi di scappare dai sotterranei. Raccogli tutti gli
+    indizi, risolvi gli enigmi, otterrai un codice numerico è proprio
+    quello che ti permetterà di uscire. Puoi chiedermi aiuto.
+      <think><set name="level">SOTTERRANEI</set></think>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>aiuto</pattern>
+
+    <template>Vuoi aiuto sul primo, secondo o terzo quiz
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>primo *</pattern>
+    <template><srai> primo</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>terzo *</pattern>
+
+    <template><srai>terzo</srai>
+    </template>
+</category>
+
+<category>
+    <pattern>secondo *</pattern>
+
+    <template><srai>secondo</srai>
+    </template>
+</category>
+
+  <category>
+    <pattern>primo</pattern>
+    <that>VUOI AIUTO *</that>
+     <template> ricomponi il puzzle, troverai l'indizio
+   </template>
+
+  </category>
+
+
+<category>
+    <pattern>secondo</pattern>
+    <that>VUOI AIUTO *</that>
+     <template>
+ prova a rispondere correttamente, una delle risposte è contenuta in una foto
+   </template>
+ </category>
+
+<category>
+    <pattern>terzo</pattern>
+    <that>VUOI AIUTO *</that>
+     <template>
+indovina le parole, attento ai numeri!
+   </template>
+</category>
+</aiml>

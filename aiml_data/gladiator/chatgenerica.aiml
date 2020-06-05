@@ -1,0 +1,144 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+<category>
+    <pattern>ciao</pattern>
+    <template>
+     <random>
+        <li>vuoi giocare con me</li>
+        <li>vuoi informazioni sull anfiteatro</li>
+    </random>
+    <think><set name="no_info">0</set></think>
+    <think><set name="no_game">0</set></think>
+    </template>
+</category>
+
+<category>
+    <pattern>si</pattern>
+    <that>VUOI GIOCARE CON ME</that>
+    <template>Sei pronto ? Ah dimenticavo, puoi chiedermi aiuto in qualsiasi momento cliccando sull'icona di telegram, divertiti!
+       url{https://view.genial.ly/5e522c6eaedfb7101a1042ab/interactive-content-gioca}
+       <think><set name="topic">SOTTERRANEI</set></think>
+    </template>
+</category>
+
+
+
+
+<category>
+   <pattern>Ciao mi chiamo *</pattern>
+   <template>ciao piacere <set name="nome"><star/></set>, io sono un bot e ti aiuterò nella tua avventura</template>
+</category>
+
+
+<category>
+  <pattern>dimmi data e ora</pattern>
+  <template>ok, <date/></template>
+</category>
+
+<category>
+  <pattern>no</pattern>
+  <that>VUOI GIOCARE CON ME</that>
+  <template>
+  <condition name="no_info" value="0">
+  vuoi informazioni sull anfiteatro<think><set name="no_game">1</set></think>
+  </condition>
+   <condition name="no_info" value="1">
+  alla prossima allora
+  </condition>
+  </template>
+</category>
+
+<category>
+  <pattern>no</pattern>
+  <that>VUOI INFORMAZIONI SULL ANFITEATRO</that>
+  <template>
+  <condition name="no_game" value="0">
+  vuoi giocare con me<think><set name="no_info">1</set></think>
+   </condition>
+  <condition name="no_game" value="1">
+  alla prossima allora
+  </condition>
+  </template>
+</category>
+
+
+<category>
+<pattern>si</pattern>
+<that>VUOI INFORMAZIONI SULL ANFITEATRO</that>
+<template>
+  <random>
+    <li>l anfiteatro ospita circa 45.000 persone!</li>
+    <li>l anfiteatro doveva presentare 4 piani con altezza 46m!</li>
+    <li>l anfiteatro è erroneamente noto come luogo dove combattè Spartaco</li>
+    <li>l anfiteatro presenta tre transenne con ognuna un rilievo particolare.</li>
+  </random>
+</template>
+</category>
+
+
+
+<category>
+    <pattern>ciao *</pattern>
+    <template><srai>ciao</srai></template>
+</category>
+
+
+<category>
+    <pattern>* giocare</pattern>
+    <template>vuoi giocare con me </template>
+</category>
+
+<category>
+    <pattern>* info *</pattern>
+    <template>vuoi giocare con me </template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <that>ALLA PROSSIMA ALLORA</that>
+    <template>scegli cosa fare, giocare o info sull'anfiteatro</template>
+</category>
+
+<category>
+    <pattern>*</pattern>
+    <template>
+    <condition name="topic" value="">
+     <srai>ciao</srai>
+    </condition>
+
+
+    <condition name="topic" value="SOTTERRANEI">
+     Sei nei sotterranei. Chiedi aiuto per giocare. Oppure chiedi di ricominccare
+    </condition>
+
+
+    <think><set name="no_info">0</set></think>
+    <think><set name="no_game">0</set></think>
+    </template>
+</category>
+
+
+<category>
+    <pattern>ricomincia</pattern>
+    <template>
+           <think><set name="topic">SOTTERRANEI</set></think>
+
+     <srai>ciao</srai>
+
+
+
+    <think><set name="no_info">0</set></think>
+    <think><set name="no_game">0</set></think>
+    </template>
+</category>
+
+
+
+<category>
+    <pattern>ricominciamo</pattern>
+    <template>
+     <srai>ricomincia</srai>
+    </template>
+</category>
+
+</aiml>

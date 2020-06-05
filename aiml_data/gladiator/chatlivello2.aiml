@@ -1,0 +1,26 @@
+<aiml version="1.0.1" encoding="UTF-8">
+
+
+<category>
+  <pattern>394</pattern>
+  <template>Hai superato il primo livello , ci troviamo nell'arena dell'anfiteatro, sei pronto a continuare
+  <think><set name="topic">ARENA</set></think>
+  </template>
+</category>
+
+<category>
+  <pattern>si</pattern>
+  <that>HAI SUPERATO IL PRIMO LIVELLO</that>
+  <template>
+  ti trovi nell'arena dell'anfiteatro, risolvendo gli enigmi otterrai una stringa da comunicarmi per uscire!
+  url{https://view.genial.ly/5e5e78db24b7570fe798b551/interactive-content-anfiteatro}</template>
+</category>
+
+
+
+<category>
+  <pattern>Adriano</pattern>
+  <template>Complimenti! Ritorna a giocare con noi</template>
+</category>
+
+</aiml>
