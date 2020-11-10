@@ -11,19 +11,17 @@ class ReceiverAgent(Agent):
 
     class RecvBehav(CyclicBehaviour):
         async def run(self):
-            print("RecvBehav running")
+            # print("RecvBehav running")
 
-            msg = await self.receive(timeout=100) # wait for a message for 10 seconds
+            msg = await self.receive()  # wait for a message for 10 seconds
             if msg:
                 # print(msg)
                 if msg.body is not None:
-                    print("Message received with content: {}".format(msg.body))
+                    # print("Message received with content: {}".format(msg.body))
 
                     response = msg.make_reply()
                     response.body = self.agent.kernel.respond(msg.body)
                     await self.send(response)
-            else:
-                print("Did not received any message after 10 seconds")
 
             # stop agent from behaviour
             # await self.agent.stop()
@@ -48,7 +46,7 @@ class ReceiverAgent(Agent):
 
 
 if __name__ == "__main__":
-    receiveragent = ReceiverAgent("cleopatra2@jabber.hot-chilli.net", "cleopatra..")
+    receiveragent = ReceiverAgent("cleopatra2@jabber.hot-chilli.net", "password")
 
     future = receiveragent.start()
     future.result() # wait for receiver agent to be prepared.
