@@ -1,0 +1,184 @@
+#version: "2.0"
+
+intents:
+  - greet
+  - goodbye
+  - affirm
+  - deny
+  - mood_great
+  - mood_unhappy
+  - bot_challenge
+  - bot_purpose
+  - bot_actions
+  - personale
+  - info
+  - sommario
+  - soa
+  - ambizioni
+  - obbiettivi
+  - professore
+  - metodologia
+  - cyberarc
+  - ita
+  - emboage
+  - collabenv
+  - gtavr
+  - musdif
+  - thanks
+  
+entities:
+   - name
+   - surname
+actions:
+  - action_Info_Prof
+  
+responses:
+  utter_greet:
+  - text: "Hi! I'm cleoBot, if you don't know what i can do, ask me 'commands'"
+
+  utter_cheer_up:
+  - text: "Come on, I know it will get better! in the meantime watch this:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did I help you?"
+
+  utter_happy:
+  - text: "Great, if you need anything else, give a whistle!"
+  
+  utter_respond:
+  - text: "you're welcome"
+
+  utter_goodbye:
+  - text: "Goodbye"
+
+  utter_iamabot:
+  - text: "I am a bot, implemented with rasa"
+  
+  utter_purpose:
+  - text: "My purpose is to give you information about the CLEOPATRA project"
+  
+  utter_sorry:
+  - text: "I'm sorry, I will work to improve myself"
+  
+  utter_buttons:
+  - text: "At the moment these are the commands:"
+    buttons:
+    - title: "Info"
+      payload: "/info"
+    - title: "Staff"
+      payload: "/personale"
+      
+  utter_personale:
+  - text: "the participating professors are: Prof. Salvatore Venticinque (male), Prof. Rocco Aversa (male),
+  Prof. Massimo Ficco (male), Prof. Maurizio D’Arienzo (male), Prof. Giuseppina Renda (female), Prof. Almerinda Di Benedetto (female),
+  Dott. Paola Carfora (female), Dott. Rosa Vitale (female). if you want to know more, ask me 'tell me about [nome] [cognome]'"
+
+  utter_informazioni:
+  - text: "choose in which macro topic you want information"
+    buttons:
+    - title: "Proposal Summary"
+      payload: "/sommario"
+    - title: "State of the Art"
+      payload: "/soa"
+    - title: "Ambition, Project progress beyond the State of the art"
+      payload: "/ambizioni"
+    - title: "Objectives"
+      payload: "/obbiettivi" 
+    - title: "Methodology"
+      payload: "/metodologia"    
+     
+     
+  utter_sommario:
+  - text: "The ambition of this project is to provide a support for building  a new generation of cyber physical systemswhere human users,
+  devices and intelligent software agents allows for multi-modal collaboration within onehybrid,We aim atexploiting a new kind of social dimension for leveraging the interest and for augmenting the culturalexperience.
+  Research and technological advances will be evaluated in two relevant case studies located in Campania"
+  
+  utter_soa:
+  - text: "what do you want to know in particular?"
+    buttons:
+    - title: "Cyber-archaeology"
+      payload: "/cyberarc"
+    - title: "Intelligent virtual agents"
+      payload: "/ita"
+    - title: "Embodied agents"
+      payload: "/emboage"
+    - title: "Collaborative environments"
+      payload: "/collabenv" 
+    - title: "Guided tour, Augmented and Virtual Reality, Emotional Browsing"
+      payload: "/gtavr"
+    - title: "Social fruition and concept of 'Museo diffuso'"
+      payload: "/musdif"
+   
+  utter_ambizioniprogresso:
+  - text: "The advance of information and communication technology (ICT) opened new opportunity of interactionsbetween human users and services,
+  shifting the interaction to a virtual dimension such as social networks,multiplying them,
+  but loosing the added value of live experiences in real environment.
+  On the other handnew paradigms, such as the Internet of Things (IoT) has enabled a new kind of interaction between realobjects.
+  The ambition of this project is to provide a support for building  a new generation of cyber physical systemswhere human users,
+  devices and intelligent software agents allows for multi-modal interaction within onehybrid (real, augmented and virtual),
+  possibly location distributed,cultural environment.
+  This project aims at exploiting the social dimension for leveraging the interest and for augmenting thecultural experience by the interaction with
+  a) other users, who add emotional bust and empathy;
+  b)intelligent software agent who deliver knowledge as avatars, virtual characters or guides;
+  c) smart devices(sensors, smart camera, lights, speakers, positioning systems, etc.),
+  which became the bridge betweensoftware agents and the physical world through the IoT."
+  
+  utter_Objectives:
+  - text: "The first objective of the project consists in defining of collaborative models for fruition of cultural assets.
+  O2 Artificial intelligence for learning agents in one to many cyber-physical social interactions
+  O3 Information fusion and knowledge extraction and multi-modal presentation
+  O4 Advanced content production and communication"
+  
+  utter_metodologia:
+  - text: "A cyber physical system will be dynamically built as a temporary P2P overlay of users, who are visiting thesame or different distributed cultural assets. The user’s smartphone will be a gate to join the network toaccess a wider cultural space. The overlay will be built over a standard P2P protocol such as XMPP, but
+  will be extended with advanced functionalities and intelligent software agents and services implemented asmembers of the same network. Visitors, by their avatars, represent channels, which allow to reach andopen a window with different view of the same site or on remote sites.
+  Physical devices, such as mobile camera, speakers, monitors, drones will be member themselves of thecyber physical system, which can be used by the visitors to augment his experience.
+  Learning techniques will be investigated to allow agents for personalizing the presentation and the itineraryaccording to the user’s interest.
+  Different technologies will be integrated to adapt the presentation and the communication methodsaccording to the users’ profile. Some example are text to speech and speech to text solution. Securityconstraints, intellectual property and business models will be investigated to explore barriers and potentialimpact of the proposed solution.
+  The project will adopt an agile development approach to build the proposed solution through an iterativeand incremental research activity and development process. "
+  
+  utter_cyberarc:
+  - text: "Cyber-archaeology redefines a possible post-process evolution of archaeological interpretation accordingto a cybernetic perspective; it concerns the process of simulation and feedback through virtualenvironments and multivocal interpretations.
+  cyber-archaeology is driven to construct behaviors, interactions andaffordances (virtual relations between 3D items), enhancing the perceptual factors of cyberspace anddigital 3D simulation
+  3D Virtual Worlds can be utilised for teaching or illustrating ancient history, arts and any kind of culturalcontents "
+  
+  utter_ita:
+  - text: "The virtual heritage concept has the potential to incorporate some of the knowledge aspects through theuse of avatars. Through the use of artificial intelligence (A.I.) the virtual agents can absorb the relevantknowledge and become the knowledge carriers.
+  Question answering systems allow agents to provide natural language responses to natural languagequeries in agent-to-human interaction.
+  Many techniques and technologies have been investigated in [Tarau, 2004], to provide speech-enabledconversational agents with the ability of performing inference processing on very large knowledge bases, in
+  particular with application to voice enabled chatbots in a virtual storytelling environment. "
+  
+  utter_emboage:
+  - text: "Animated agents have the potential to convey information in a more natural way than other mediatraditionally used on the world-wide web, such as text, audio, or video clips [Helmut, 2004].In particular, embodied conversational agent are able to exhibit a human like behavior, whilecommunicating with other virtual or human agents requires enriching the dialogue of the agent with non-verbal information [Bickmore and Cassell, 2005].
+  DPML allows for a specification of a discourse plan, whichcan be enriched with the communicative meanings that have to be attached to it, by producing an input tothe body in a new specific XML language (APML) [De Carolis,2004]. The multi-modal presentation markuplanguage (MPML) is a powerful and easy-to-use XML-style language enabling content authors to script richWeb-based interaction scenarios featuring life-like characters.
+  These powerful inferential capabilities allow the agents to interact withand answer questions about the story in dialogic exchanges with users. Such interactions allow a user tolearn about the content of a story by asking the questions he/she personally needs or wants to ask. Agentsarchitecture provides interactive information retrieval for various forms of multimedia content. "
+  
+  utter_collabenv:
+  - text: "A promising new direction in learning environments is emerging from the use of MUDs (multi-user domains)and collaborative environments where many users/avatars and digital communities can interact with eachother, constructing and exploring virtual worlds in the same time [Forte, 2009].
+  Research and development in agent-based systems has traditionally bargained for well behaved agentsimmersed in reliable infrastructures in relatively simple domains.
+  Electronic institutions incorporate organisational abstractions into computing systems to ease their design,development, and maintenance [Sierra, 2002]. Electronic institutions provide a computational analogue ofhuman organisations, in which intelligent agents playing different organisational roles interact to accomplishindividual and organisational goals. "
+  
+  utter_gtavr:
+  - text: "Augmented Reality projects to support the understanding of archaeological sites have beenpromoted in collaboration with the Soprintendenza Archeologia Belle arti e Paesaggio of Rome: iAventinoand iTestaccio apps  were created, followed up the Trajan Column App. Particular impact had i-MIBACVoyager with virtual reconstructions in real time, through which to admire the archaeological area ofImperial Fora in Rome.
+  An immersive archaeological excavation experience in Augmented Reality was proposed in the Seattle ArtMuseum  (Archaeological Virtual Dig), which nevertheless provided a very complex hardware system,which can only be used with the help of museum staff [Bonacini, 2014]. "
+  
+  utter_musdif:
+  - text: "In relation to the social fruition for widespread sharing of information there are geosocial-blog and geo-social network through which to customize city maps
+  share emotional tours through the geo-tagging of urbanroutes or museums.
+  In Italy, the technology has also been used for first experiences of the Museo Diffuso. One of the firstprojects is the Turin Museum, launched in 2011, an essentially virtual place, developed using the Web 3.0and GraphDB database for data sharing, preservation and communication the knowledge of the real city.The system is able to create and change its contents, according to the philosophy of Wikipedia; it use ageoblog, created by the Acmos Association and the Performing MediaLab."
+ 
+#slots:
+  # this slot will influence the conversation depending on
+  # whether the slot is set or not
+#  name:
+#    type: text
+#    influence_conversation: true 
+#  surname:
+#    type: text
+#    influence_conversation: true
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
