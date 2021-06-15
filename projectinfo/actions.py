@@ -11,6 +11,9 @@ from typing import Any, Text, Dict, List
 #
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+import xml.etree.ElementTree as ET
+import urllib.request
+import ssl
 #
 
 class ActionInfoProf(Action):
@@ -69,3 +72,119 @@ class ActionInfoProf(Action):
                      dispatcher.utter_message(text="She is engaged on several research topics, such as currency in the ancientPompeii, examined through coin finds from the most ancient ones (III sec. a.C.) to the last ones, buriedduring the eruption in 79 d.C.; coinage phenomena in the ancient Campania with special regards toSamnites; Roman coinage and monetary issues of autonomous communities during the republican epoch.")
 			 
          return []
+class Actionpublprof(Action):
+     def name(self) -> Text:
+         return "action_Publ_Prof"
+
+     def run(self, dispatcher: CollectingDispatcher,
+           tracker: Tracker,
+             domain: Dict[Text, Any], ) -> List[Dict[Text, Any]]:
+			 
+         surname = "ciao"
+         print(surname)
+         name = "ciao"
+         print(name)
+         entities = tracker.latest_message['entities']
+         print(entities)
+         for e in entities:
+             if e['entity'] == 'name':
+                 name = e['value']
+             if e['entity'] == 'surname':
+                 surname = e['value']
+                 context = ssl._create_unverified_context()
+                 url = 'https://dblp.org/search/publ/api?q='+name+'+'+surname
+                 response = urllib.request.urlopen(url,context=context).read()
+                 tree = ET.fromstring(response)
+                 dispatcher.utter_message("last five pubblication:")
+                 c=0
+                 for i in tree:
+                     for ii in i:
+                         for iii in ii:
+                             for iiii in iii:
+                                 if(iiii.tag=='title'):
+                                     c=c+1
+                                     if(c<6):
+                                         dispatcher.utter_message("-"+ iiii.text)
+            
+			 
+         return []
+		 
+		 
+		 
+class ActionNull(Action):
+    def name(self) -> Text:
+        return "action_null"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            messaggio = tracker.latest_message['text']
+            file = open("sent.txt",'a');
+            file.write("Topic: Null\n");
+            file.close()
+            return []
+class ActionInformation(Action):
+    def name(self) -> Text:
+        return "action_information"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            messaggio = tracker.latest_message['text']
+            file = open("sent.txt",'a');
+            file.write("Topic: Information\n");
+            file.close()
+            return []
+class ActionStaff(Action):
+    def name(self) -> Text:
+        return "action_staff"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            messaggio = tracker.latest_message['text']
+            file = open("sent.txt",'a');
+            file.write("Topic: Staff\n");
+            file.close()
+            return []
+class ActionAgents(Action):
+    def name(self) -> Text:
+        return "action_Agents"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            messaggio = tracker.latest_message['text']
+            file = open("sent.txt",'a');
+            file.write("Topic: Agents\n");
+            file.close()
+            return []
+class Actioncyberarc(Action):
+    def name(self) -> Text:
+        return "action_cyberarc"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            messaggio = tracker.latest_message['text']
+            file = open("sent.txt",'a');
+            file.write("Topic: cyber archeology\n");
+            file.close()
+            return []
+class Actionmusdiff(Action):
+    def name(self) -> Text:
+        return "action_musdiff"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            messaggio = tracker.latest_message['text']
+            file = open("sent.txt",'a');
+            file.write("Topic: museo diffuso\n");
+            file.close()
+            return []
+class Actionsoa(Action):
+    def name(self) -> Text:
+        return "action_soa"
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+            messaggio = tracker.latest_message['text']
+            file = open("sent.txt",'a');
+            file.write("Topic: State of Arts\n");
+            file.close()
+            return []

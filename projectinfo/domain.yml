@@ -25,12 +25,21 @@ intents:
   - gtavr
   - musdif
   - thanks
+  - pubblicazioni
   
 entities:
    - name
    - surname
 actions:
   - action_Info_Prof
+  - action_Publ_Prof
+  - action_null
+  - action_information
+  - action_staff
+  - action_Agents
+  - action_cyberarc
+  - action_musdiff
+  - action_soa
   
 responses:
   utter_greet:
