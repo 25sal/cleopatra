@@ -1,0 +1,126 @@
+{
+  "@context": [
+    "http://www.w3.org/ns/anno.jsonld",
+    "http://iiif.io/api/presentation/3/context.json"
+  ],
+  "id": "http://localhost/chungbot/montepugliano/index.json",
+  "type": "Manifest",
+  "items": [
+    {
+      "id": "http://localhost/chungbot/montepugliano/index.json/canvas/0",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "http://localhost/chungbot/montepugliano/index.json/canvas/0/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost/chungbot/montepugliano/index.json/canvas/0/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://localhost/chungbot/montepugliano/_p-1/p1.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "Le doline sono cavità della superficie di forma circolare od ovale, più o meno ampie, di profondità variabile, caratteristiche del paesaggio carsico."
+                  ]
+                },
+                "width": 1280,
+                "height": 720
+              },
+              "target": "http://localhost/chungbot/montepugliano/index.json/canvas/0"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "Le doline sono cavità della superficie di forma circolare od ovale, più o meno ampie, di profondità variabile, caratteristiche del paesaggio carsico."
+        ]
+      },
+      "width": 1280,
+      "height": 720
+    },
+    {
+      "id": "http://localhost/chungbot/montepugliano/index.json/canvas/1",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "http://localhost/chungbot/montepugliano/index.json/canvas/1/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost/chungbot/montepugliano/index.json/canvas/1/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://localhost/chungbot/montepugliano/_p-2/p2.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "a dolina presenta solitamente sul fondo un inghiottitoio, attraverso il quale defluiscono le acque meteoriche. Un inghiottitoio è il punto su una superficie carsica dove l’acqua penetra nel sottosuolo."
+                  ]
+                },
+                "width": 512,
+                "height": 288
+              },
+              "target": "http://localhost/chungbot/montepugliano/index.json/canvas/1"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "a dolina presenta solitamente sul fondo un inghiottitoio, attraverso il quale defluiscono le acque meteoriche. Un inghiottitoio è il punto su una superficie carsica dove l’acqua penetra nel sottosuolo."
+        ]
+      },
+      "width": 512,
+      "height": 288
+    },
+    {
+      "id": "http://localhost/chungbot/montepugliano/index.json/canvas/2",
+      "type": "Canvas",
+      "items": [
+        {
+          "id": "http://localhost/chungbot/montepugliano/index.json/canvas/2/annotationpage/0",
+          "type": "AnnotationPage",
+          "items": [
+            {
+              "id": "http://localhost/chungbot/montepugliano/index.json/canvas/2/annotation/0",
+              "type": "Annotation",
+              "motivation": "painting",
+              "body": {
+                "id": "http://localhost/chungbot/montepugliano/_p-3/p3.jpg",
+                "type": "Image",
+                "format": "image/jpeg",
+                "label": {
+                  "@none": [
+                    "Sull’altura di Monte Pugliano sono evidenti ampie e profonde voragini, simili a crateri o bocche di vulcano, chiamati localmente."
+                  ]
+                },
+                "width": 1600,
+                "height": 900
+              },
+              "target": "http://localhost/chungbot/montepugliano/index.json/canvas/2"
+            }
+          ]
+        }
+      ],
+      "label": {
+        "@none": [
+          "Sull’altura di Monte Pugliano sono evidenti ampie e profonde voragini, simili a crateri o bocche di vulcano, chiamati localmente."
+        ]
+      },
+      "width": 1600,
+      "height": 900
+    }
+  ],
+  "label": {
+    "@none": [
+      "msprova"
+    ]
+  }
+}
