@@ -49,7 +49,7 @@
 </category>
 
   <category>
-    <pattern>primo</pattern>
+    <pattern>secondo</pattern>
     <that>VUOI AIUTO *</that>
      <template> ricomponi il puzzle, troverai l'indizio
    </template>
@@ -58,10 +58,10 @@
 
 
 <category>
-    <pattern>secondo</pattern>
+    <pattern>primo</pattern>
     <that>VUOI AIUTO *</that>
      <template>
- prova a rispondere correttamente, una delle risposte è contenuta in una foto
+           prova a rispondere correttamente, le caselle contrassegnate formeranno il numero
    </template>
  </category>
 
@@ -69,7 +69,7 @@
     <pattern>terzo</pattern>
     <that>VUOI AIUTO *</that>
      <template>
-indovina le parole, attento ai numeri!
+       indovina le parole, attento ai numeri!
    </template>
 </category>
 </aiml>

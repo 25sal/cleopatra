@@ -7,7 +7,7 @@ from sanic import Blueprint, response
 from sanic.request import Request
 from sanic.response import HTTPResponse
 from typing import Text, Dict, Any, Optional, Callable, Awaitable, NoReturn
-
+import traceback
 import rasa.utils.endpoints
 from rasa.core.channels.channel import (
     InputChannel,
@@ -114,7 +114,8 @@ class RestInput(InputChannel):
                     content_type="text/event-stream",
                 )
             else:
-                collector = CollectingOutputChannel()
+                collector = QueueOutputChannel()
+
                 # noinspection PyBroadException
                 try:
                     await on_new_message(
@@ -136,7 +137,7 @@ class RestInput(InputChannel):
                         f"user message '{text}'."
                     )
 
-                collector.messages[0]['action'] = "action"
+
                 return response.json(collector.messages)
 
         return custom_webhook
@@ -151,18 +152,7 @@ class QueueOutputChannel(CollectingOutputChannel):
     def name(cls) -> Text:
         return "queue"
 
-    # noinspection PyMissingConstructor
-    def __init__(self, message_queue: Optional[Queue] = None) -> None:
-        super().__init__()
-        self.messages = Queue() if not message_queue else message_queue
-
-    def latest_output(self) -> NoReturn:
-        raise NotImplementedError("A queue doesn't allow to peek at messages.")
-
-    async def _persist_message(self, message: Dict[Text, Any]) -> None:
-        await self.messages.put(message)
 
     async def send_text_message(self, recipient_id: Text, text: Text, **kwargs: Any) -> None:
-        for message_part in text.strip().split("\n\n"):
-            await self._persist_message(self._message(recipient_id, text=message_part))
-        await self._persist_message(self._message(recipient_id, custom={'action': kwargs['utter_action']}))
+
+        await self._persist_message(self._message(recipient_id, text=text, custom=dict({'action':   kwargs['utter_action']})))

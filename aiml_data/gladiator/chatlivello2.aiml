@@ -2,7 +2,7 @@
 
 
 <category>
-  <pattern>394</pattern>
+  <pattern>934</pattern>
   <template>Hai superato il primo livello , ci troviamo nell'arena dell'anfiteatro, sei pronto a continuare
   <think><set name="topic">ARENA</set></think>
   </template>
