@@ -1,0 +1,146 @@
+#version: "2.0"
+
+intents:
+  - ciao
+  - chi_sei
+  - arco_capua_intro
+  - stato_conservazione
+  - materiali_arco
+  - struttura_arco_1
+  - struttura_arco_2
+  - eta_arco
+  - stato_arco
+  - restauro_arco_1
+  - restauro_arco_2
+  - rivestimento_arco
+  - aspetto_attuale_arco
+  - restauro_arco_3
+  - restauro_arco_4
+  - restauro_arco_ultimo
+  - ipotesi_ricostruttiva
+  - aspetto
+  - aspetto_attuale_1
+  - aspetto_attuale_2
+  - tipologia_arco
+  - contesto_originale
+  - raffigurazioni_arco_1
+  - raffigurazioni_arco_2
+  - dipinto_labruzzi_1
+  - dipinto_labruzzi_2
+  - battaglia_1860_1
+  - battaglia_1860_2
+  - dipinto_battaglia
+  - lastra_memorativa_battaglia
+entities:
+   - name
+   - surname
+#actions:
+  
+responses:
+
+  utter_saluta: 
+  - text: "Ciao. Chiedimi qualcosa."
+  
+  utter_presentati:
+  - text: "Sono Augusto, sono qui per guidarti alla scoperta dell'Arco di Capua. Prova a farmi una domanda"
+  
+  utter_arco_capua_intro:
+  - text: "Posto lungo la via Appia, poco prima dell’ingresso alla città antica di Capua, è un arco trionfale noto come Arco di Adriano, Archi di Capua o Arco Felice."
+
+  utter_stato_conservazione:
+  - text: "Dell’arco, in origine a tre fornici, se ne conserva oggi soltanto uno insieme a tre dei quattro piloni che lo componevano. Il monumento raggiunge un’altezza di 10 m e una larghezza di 18,5 m."
+
+  utter_materiali_arco:
+  - text: "Realizzato con un paramento in opera laterizia, era probabilmente rivestito con elementi architettonici applicati, quali cornici e colonne, come lasciano presupporre resti lapidei in calcare bianco, inglobati nella struttura, e i fori d’imposta ancora visibili."
+
+  utter_struttura_arco_1:
+  - text: "I piloni poggiano su una base allargata in blocchi parallelepipedi in calcare bianco e sono contraddistinti da slanciate nicchie allungate e arcuate;"
+  
+  utter_struttura_arco_2:
+  - text: "altre nicchie sono presenti anche nella sezione interna dei pilastri, impostate sotto l’arco."
+
+  utter_eta_arco:
+  - text: "Il monumento viene datato in epoca flavia o verso l’inizio del II secolo d.C. Le considerazioni cronologiche sono state avanzate sulla base dell’architettura poiché mancano epigrafe dedicatoria e apparato decorativo."
+
+  utter_stato_arco:
+  - text: "Lo stato attuale del monumento appare diverso da quello antico, non solo per la rovina delle strutture nel corso del tempo ma anche per i numerosi interventi di restauro che hanno inciso fortemente sull’aspetto originario."
+  
+  utter_restauro_arco_1:
+  - text: "Il restauro più importante fu quello operato dai Borboni alla metà dell’Ottocento a causa dello stato di degrado e delle numerose lacerazioni che ne compromettevano la statica. In un primo progetto di restauro veniva proposto che i lavori (interventi di puntellamento e risarcimento generalizzato) fossero eseguiti presentando attenzione alla differenziazione delle tecniche, in modo da poter riconoscere “il vecchio dal nuovo”."
+  
+  utter_restauro_arco_2:
+  - text: "Successivamente, invece, a causa dell’aggravarsi delle condizioni della struttura, in un secondo progetto fu proposto un intervento più radicale volto ad una rifasciatura completa della costruzione in mattoni."
+  
+  utter_rivestimento_arco:
+  - text: "Inoltre, fu indicato di mettere in opera nella parte superiore un rivestimento in quadroni per garantire una maggiore protezione dagli agenti atmosferici. "
+      
+  utter_aspetto_attuale_arco:
+  - text: "I lavori proposti, noti grazie alla documentazione d’archivio, sono riconoscibili nelle condizioni dell’arco così come ci appare oggi."
+
+  utter_restauro_arco_3:
+  - text: "Un altro restauro avvenne negli anni successivi al 1883 per rimediare ai danni derivati dalla battaglia del Volturno del 1860 mentre altri interventi furono condotti tra il 1945 e il 1953-55 in seguito agli eventi della II guerra mondiale. " 
+     
+     
+  utter_restauro_arco_4:
+  - text: "In tale occasione furono operate diverse tamponature, demolizioni di parte dei restauri precedenti e una ricostruzione parziale della volta superstite; questi restauri interessarono anche la rifasciatura dei plinti in blocchetti di opera poligonale di tufo."
+  
+  utter_restauro_arco_ultimo:
+  - text: " Un ultimo restauro, condotto negli anni Settanta, contribuì ad appiattire la sommità dell’arco superstite sui piloni laterali. "
+   
+  utter_ipotesi_ricostruttiva:
+  - text: "E’ stata avanzata una ipotesi ricostruttiva della struttura architettonica che permette di comprendere come il monumento si presentava in antico."
+  
+  utter_aspetto:
+  - text: "L’arco a tre fornici, con il centrale maggiore dei laterali, appare contraddistinto da una lineare semplicità delle forme ed articolato nella fronte con nicchie, inquadrate da colonne, che dovevano accogliere delle statue."
+
+  
+  utter_aspetto_attuale_1:
+  - text: "Oggi possiamo ammirare soltanto tre piloni e uno dei fornici laterali mentre viene a mancare tutta la parte superiore, tecnicamente definita attico."
+
+  
+  utter_aspetto_attuale_2:
+  - text: "Del paramento antico in laterizio, causa i numerosi e incisi restauri, si conserva ben poco, in particolare, sulla facciata esterna alla città, in alcuni punti dei piloni e in corrispondenza delle nicchie. "
+  
+  utter_tipologia_arco:
+  - text: "L’arco si inserisce in una tipologia legata a contesti di particolare rilievo monumentale e probabilmente occupava una posizione di spicco nel paesaggio antico."
+  
+  utter_contesto_originale:
+  - text: "Si elevava sulla strada al termine del lungo rettifilo che l’Appia conduceva a partire da Casilinum. In tal modo, posto al culmine di una salita, apriva la vista sull’antica città di Capua, costituendo una sorta di ingresso ideale."
+  
+  utter_raffigurazioni_arco_1:
+  - text: "Di notevole interesse per lo studio della forma originaria dell’arco sono i disegni che lo raffigurano tra Settecento e Ottocento, che possono, a volte, contribuire a fornire dettagli, dei quali altrimenti non si conoscerebbe."
+  
+  utter_raffigurazioni_arco_2:
+  - text: "Nel corso del tempo diversi artisti, viaggiatori hanno raffigurato il monumento così come appariva ai loro occhi, talvolta in modo più pittoresco e suggestivo altre più realistico."
+  
+  utter_dipinto_labruzzi_1:
+  - text: "Particolare valore artistico e documentario ha il disegno dell’arco ad opera di Carlo Labruzzi, redatto in occasione del viaggio lungo la via Appia che intraprese nell’autunno del 1789 da Roma a Benevento. La cura dell’artista risiede nella documentazione del monumento così come si presentava e nella scelta dell’inquadratura che ne riuscisse ad evidenziare le peculiarità costruttive."
+  
+  utter_dipinto_labruzzi_2:
+  - text: "Dell’arco, ripreso di tre quarti dal lato d’ingresso alla città, viene raffigurata la struttura in laterizio, i due filari di blocchi al di sotto di ciascuno dei piloni, la scaletta e la nicchia che accoglieva l’edicola sacra."
+  
+  utter_battaglia_1860_1:
+  - text: "Nel 1860, davanti l’arco di Capua, avvenne uno scontro armato tra i volontari garibaldini e le truppe borboniche."
+  
+  utter_battaglia_1860_2:
+  - text: "L’evento era parte della cosiddetta battaglia del Volturno, combattuta dal 26 settembre al 2 ottobre 1860, nei pressi del fiume Volturno, durante la spedizione dei Mille, al fine di bloccare l’avanzata garibaldina e rioccupare il Regno delle Due Sicilie."
+  
+  utter_dipinto_battaglia:
+  - text: "Nel dipinto, conservato presso la Galleria d’Arte Moderna - Palazzo Pitti a Firenze, è possibile ammirare i resti dell’arco monumentale che fece da sfondo ad uno degli scontri armati."
+  
+  utter_lastra_memorativa_battaglia:
+  - text: " In ricordo di questa battaglia, venne collocata sul pilastro centrale dell’arco una lastra in marmo che celebrava la vittoria garibaldina avvenuta in questo luogo."
+#slots:
+  # this slot will influence the conversation depending on
+  # whether the slot is set or not
+#  name:
+#    type: text
+#    influence_conversation: true 
+#  surname:
+#    type: text
+#    influence_conversation: true
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

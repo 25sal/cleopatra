@@ -1,0 +1,48 @@
+version: "2.0"
+nlu:
+- intent: ciao
+  examples: |
+    - ciao
+    - hey
+    - salve  
+- intent: dove_sono
+  examples: |
+    - Dove sono
+    - Dove mi trovo
+- intent: info_mura
+  examples: |
+    - Quanto si estendono le mura
+    - Quanto sono lunghe le mura
+    - Cosa sono le mura
+    - Mi dai informazioni sulle mura
+- intent:  altri_ritrovamenti
+  examples: |
+    - Ci sono sono altri ritrovamenti archeologici lungo il percorso
+    - C'è altro da vedere a Monte Pugliano
+    - Ci sono altre rovine a Monte Pugliano
+- intent:  info_villa
+  examples: |
+    - Hai un’immagine della villa
+    - Hai informazioni sulla villa
+- intent:  info_villa
+  examples: |
+    - Hai un’immagine del villaggio
+    - Ha informazioni del villaggio
+- intent:  more_info_villa
+  examples: |
+    - Hai un'immagine della villa
+    - Mi dai informazioni sulla villa
+    - Cosa posso vedere della villa
+- intent:  museo_telesia_loc
+  examples: |
+    - Quanto  dista il museo archeologico di Telesia
+    - Dove si trova  il museo archeologico di Telesia
+    - Hai una mappa del  museo archeologico di Telesia
+- intent:  altri_siti_fort
+  examples: |
+    - Posso visitare altri siti nei dintorni
+    - Ci sono altri siti nei dintorni
+- intent:  info_tragitto
+  examples: |
+    -  C’è altro di interessante lungo il tragitto
+    - Cosa c'è sul tragitto

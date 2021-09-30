@@ -1,0 +1,55 @@
+version: "2.0"
+nlu:
+- intent: hallo
+  examples: |
+    - hallo
+    - hey
+    - bye 
+    - hello 
+- intent: my_location
+  examples: |
+    - Where am I
+    - Where I am
+- intent: info_wall
+  examples: |
+    - How long are the walls?
+    - How many km are the all?
+    - How long the wall extent
+    - Give mi information about the wall
+- intent:  other_ruins
+  examples: |
+    - Are there other ruins along the wall
+    - Are there any other archaeological finds along this way? 
+    - Can I se other things in Monte Pugliano
+    - Are there other archaelogical finding in Monte Pugliano
+- intent:  info_villa
+  examples: |
+    - Have you an image of the  Villa
+    - Can you give me information about the Villa
+    - Give me information about the Villa
+- intent:  info_villa
+  examples: |
+    - Do you have an image of the village?
+    - Do you have information about the village?
+- intent:  more_info_villa
+  examples: |
+    - Do you have an image of the Villa?
+    - Do you have additional information?
+    - What can I see of the Villa
+- intent:  museum_telesia_loc
+  examples: |
+    - How long is to the archaelogical museum of Telesia
+    - How far is the Archaeological Museum of Telesia?
+    - Where is the museum of Telesia
+    - Do you have a map the archaological museum di Telesia
+- intent:  other_sites_wall
+  examples: |
+    - Can I visit othe sites around here.
+    - Can I visit other archaeological sites nearby?
+    - Are there other sites close to us
+- intent:  info_path
+  examples: |
+    - Are there  other interesting things along the path
+    - Is there anything else interesting along the way?
+    - What is along the path
+    - What is along the way

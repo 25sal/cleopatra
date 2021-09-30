@@ -1,0 +1,15 @@
+step 1
+assegno username e password:
+python C:\Users\napol\Documents\Rasa_Projects\Spacypr\muc_old.py -j CleoBot@jabber.hot-chilli.net -p Foreverlol1 -r private  -n Cleobot;
+
+(chiaramente il percorso del file varia in base a dove posizionate i files)
+
+step 2
+faccio partire il bot sul server:
+rasa run -m models --enable-api --cors "*" --debug
+
+step 3 
+faccio partire le custom actions su porte 5053:
+rasa run actions -p 5053
+
+(step su cmd diversi)

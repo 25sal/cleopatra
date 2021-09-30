@@ -1,0 +1,18 @@
+apt update
+apt upgrade
+apt install python3-pip
+pip3 install rasa[spacy]
+pip3 install gast==0.3.3
+pip3 install pyjwt==2.0.0
+pip3 install sklearn
+python3 -m spacy download en_core_web_md
+python3 -m spacy download it_core_news_sm
+python3
+import spacy
+nlp=spacy.load("en_core_web_md")
+apt install python3-nltk
+python3 -m nltk.downloader vader_lexicon
+apt install git
+mkdir /home/cleobots
+cd /home/cleobots
+git clone https://github.com/25sal/cleopatra.git .

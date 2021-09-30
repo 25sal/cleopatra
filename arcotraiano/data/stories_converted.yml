@@ -1,0 +1,56 @@
+version: "2.0"
+stories:
+- story: greet
+  steps:
+  - intent: ciao
+  - action: utter_saluta
+  - intent: chi_sei
+  - action: utter_presentati
+- story: intro
+  steps:
+  - intent: arco_capua_intro
+  - action: utter_arco_capua_intro
+  - action: utter_stato_conservazione
+  - intent: materiali_arco
+  - action: utter_materiali_arco
+- story: first
+  steps:
+  - intent: struttura_arco_1
+  - action: utter_struttura_arco_1
+  - action: utter_struttura_arco_2
+  - intent: materiali_arco
+  - action: utter_materiali_arco
+  - intent: eta_arco
+  - action: utter_eta_arco
+- story: second
+  steps:
+  - intent: eta_arco
+  - action: utter_eta_arco
+  - intent: struttura_arco_1
+  - action: utter_struttura_arco_1
+  - action: utter_struttura_arco_2
+  - intent: materiali_arco
+  - action: utter_materiali_arco
+- story: third
+  steps:
+  - intent: materiali_arco
+  - action: utter_materiali_arco
+  - intent: eta_arco
+  - action: utter_eta_arco
+  - intent: struttura_arco_1
+  - action: utter_struttura_arco_1
+  - action: utter_struttura_arco_2
+- story: fourth
+  steps:
+  - intent: aspetto
+  - action: utter_aspetto
+  - intent: aspetto_attuale_1
+  - action: utter_aspetto_attuale_1
+  - action: utter_aspetto_attuale_2
+- story: fifth
+  steps:
+  - intent: aspetto_attuale_1
+  - action: utter_aspetto_attuale_1
+  - action: utter_aspetto_attuale_2
+  - intent: aspetto
+  - action: utter_aspetto

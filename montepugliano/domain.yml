@@ -1,0 +1,66 @@
+version: "1.0"
+
+intents:
+  - ciao
+  - dove_sono
+  - info_mura
+  - altri_ritrovamenti
+  - info_villaggio
+  - info_villa
+  - more_info_villa
+  - museo_telesia_loc
+  - altri_siti_fort
+  - info_tragitto
+entities:
+   - name
+   - surname
+#actions:
+  
+responses:
+
+  utter_saluta: 
+  - text: "Ciao. Chiedimi qualcosa."
+  utter_dove_sono:
+  - text: "Sei presso la cinta muraria di Monte Pugliano, nel punto indicato in rosso!"
+  utter_info_mura:
+  - text: "Le mura si estendono per 20 Km."
+  utter_dettagli_mura:
+  - text: "Ti mostro alcuni dettagli delle mura che puoi osservare lungo il percorso."
+  utter_visitors:
+  - text: "Ci sono 10 persone in visita sul percorso connesse al social di Montepugliano. Puoi interagire con loro aggiungendoti al gruppo."
+  utter_altri_ritrovamenti:
+  - text: "Ci sono i resti di una villa romana e di un villaggio medievale, raggiungibili a piedi. 
+Ti mostro un’immagine del villaggio."
+  utter_info_villa:
+  - text: "Qui puoi vedere un dettaglio, e la sua posizione lungo le mura. Vuoi altre informazioni?"
+  utter_more_info_villa:
+  - text: "Ecco un altra immagine della villa. Puoi visualizzare i ritrovamenti archeologici in questa zona presso il museo di Telesia."
+  utter_info_villaggio:
+  - text: "Ti mostro un’immagine del villaggio."
+  utter_museo_telesia_loc:
+  - text: "Il museo dista pochi minuti di auto, come puoi verificare dalla mappa."
+  utter_altri_siti_fort:
+  - text: "Puoi visitare altre cinte fortificate nei dintorni, raggiungibili in pochi minuti in auto: "
+    buttons:
+    - title: "San pasquale"
+      payload: "/san_pasquale"
+    - title: "Monte Acero"
+      payload: "/monte_acero"
+    - title: "Rocca"
+      payload: "/rocca"
+  utter_info_tragitto:
+  - text: "Puoi visitare il Museo Archeologico di Telesia"
+#slots:
+  # this slot will influence the conversation depending on
+  # whether the slot is set or not
+#  name:
+#    type: text
+#    influence_conversation: true 
+#  surname:
+#    type: text
+#    influence_conversation: true
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

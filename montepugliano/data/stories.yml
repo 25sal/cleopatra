@@ -1,0 +1,22 @@
+version: "2.0"
+stories:
+- story: greet
+  steps:
+  - intent: ciao
+  - action: utter_saluta
+  - intent: dove_sono
+  - action: utter_dove_sono
+  - intent: info_mura
+  - action: utter_info_mura
+  - intent: altri_ritrovamenti
+  - action: utter_altri_ritrovamenti
+  - action: utter_info_villaggio
+  - intent: info_villa
+  - action: utter_info_villa
+  - action: utter_more_info_villa
+  - intent: museo_telesia_loc
+  - action: utter_museo_telesia_loc
+  - intent: altri_siti_fort
+  - action: utter_altri_siti_fort
+  - intent: info_tragitto
+  - action: utter_info_tragitto

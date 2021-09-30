@@ -1,0 +1,212 @@
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= i am sad
+{'value': 'neg', 'confidence': 0.756, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= no
+{'value': 'neg', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= what is your purpose?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= no
+{'value': 'neg', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= how are you?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= tell me about salvatore venticinque
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= tell me about massimo ficco
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= i'm sad
+{'value': 'neg', 'confidence': 0.756, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= no
+{'value': 'neg', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= what is your purpose?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= are you a bot?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= what are you?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= are you a human?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= are you a man?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= no
+{'value': 'neg', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= are you a man?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= tell me about salvatore venticinque
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= 2
+{'value': 'neg', 'confidence': 0.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= what is your purpose?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= tell me about massimo ficco
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= what is your purpose?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= tell me about salvatore venticinque
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= i am sad
+{'value': 'neg', 'confidence': 0.756, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= thank you
+{'value': 'pos', 'confidence': 0.714, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hey
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= what is your purpose
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= tell me about massimo ficco
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= thanks
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= no
+{'value': 'neg', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= thanks
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= info
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= thanks
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= staff
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= yes
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= tell me about massimo ficco
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= tell me about massimo ficco
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= thank you
+{'value': 'pos', 'confidence': 0.714, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= Let's get it started
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= staff
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= no
+{'value': 'neg', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= Let's get it started
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= what's your purpose?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= thanks
+{'value': 'pos', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= bye
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hi
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= ciao
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hallo
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= hello
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= commands
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= ciao
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= chi sei
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= ciao
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= come stai?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= ciao
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= chi sei?
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= ciao
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= chi sei
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}
+message= ciao
+{'value': 'neu', 'confidence': 1.0, 'entity': 'sentiment', 'extractor': 'sentiment_extractor'}

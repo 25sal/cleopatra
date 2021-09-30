@@ -1,0 +1,22 @@
+version: "2.0"
+stories:
+- story: greet
+  steps:
+  - intent: hallo
+  - action: utter_hallo
+  - intent: my_location
+  - action: utter_my_location
+  - intent: info_wall
+  - action: utter_info_wall
+  - intent: other_ruins
+  - action: utter_other_ruins
+  - action: utter_info_village
+  - intent: info_villa
+  - action: utter_info_villa
+  - action: utter_more_info_villa
+  - intent: museum_telesia_loc
+  - action: utter_museum_telesia_loc
+  - intent: other_sites_wall
+  - action: utter_other_sites_wall
+  - intent: info_path
+  - action: utter_info_path

@@ -1,0 +1,73 @@
+version: "1.0"
+
+intents:
+  - hallo
+  - my_location
+  - info_wall
+  - other_ruins
+  - info_village
+  - info_villa
+  - more_info_villa
+  - museum_telesia_loc
+  - other_sites_wall
+  - info_path
+entities:
+   - name
+#actions:
+  
+responses:
+
+  utter_hallo: 
+  - text: "Hallo. Ask me something."
+  utter_my_location:
+  - text: "You are close to the wall of Monte Pugliano, the red point is where you are!"
+  utter_info_wall:
+  - text: "The walls would have a perimeter of 3101 m (including the hypothetical reconstruction of the non-preserved sections)"
+  utter_details_wall:
+  - text: " I’ll show you some walls’ details that you can see along the way."
+  utter_visitors:
+  - text: "There are 10 people visiting the archaeological site. They are connected to the Montepugliano social network. You can interact with them by adding yourself to the group."
+  utter_other_ruins:
+  - text: "The ruins of a Roman villa and a Medieval village are close to you. You can reach them by feet. This is a picture of the village?"
+  utter_info_villa:
+  - text: "Here you can see some details and its position along the walls.Do you want more informations?"
+  utter_more_info_villa:
+  - text: "Here is another image of the villa. You can see the archaeological finds from this area at the Archaeological Museum of Telesia. \n https://www.piccolimusei.com/museo/museo-civico-archeologico-di-telesia/"
+  utter_info_village:
+  - text: "I show you an image of the village."
+  utter_museum_telesia_loc:
+  - text: "The museum is a few minutes away by car, as you can see on the map."
+  utter_other_sites_wall:
+  - text: "Others fortified centres are within a few minutes’ drive"
+    buttons:
+    - title: "San pasquale"
+      payload: "/san_pasquale"
+    - title: "Monte Acero"
+      payload: "/monte_acero"
+    - title: "Rocca"
+      payload: "/rocca"
+    - title: "La Pizzuta"
+      payload: "/lapizzuta"
+    - title: "Monte Cigno"
+      payload: "/montecigno"
+    - title: "Colle La Sella"
+      payload: "/collesella"
+    - title: "Pizzo del Piano"
+      payload: "/pizzodelpiano"
+
+  utter_info_path:
+  - text: "You can visit the Archaeological Museum of Telesia"
+#slots:
+  # this slot will influence the conversation depending on
+  # whether the slot is set or not
+#  name:
+#    type: text
+#    influence_conversation: true 
+#  surname:
+#    type: text
+#    influence_conversation: true
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
