@@ -1,0 +1,245 @@
+version: "2.0"
+
+nlu:
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hallo
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    
+- intent: my_location
+  examples: |
+    - Where am I
+    - Where are we
+
+- intent: info_path
+  examples: |
+    - What sites can I visit around here?
+    - What interesting things are there along the path?
+    - What is along the path?
+    - What can be seen here?
+
+- intent: arch
+  examples: |
+    - What is this arch?
+    - What are Archi di Capua?
+    - What is Arco di Adriano?
+    - What is Arco Felice?
+    - Tell me about arch.
+    
+- intent: arch_state
+  examples: |
+    - What is the state of conservation of the arch?
+    - How much is the arch preserved?
+
+- intent: arch_dimension
+  examples: |
+    - How long and how high is the arch?
+    - What are arch dimensions?
+    
+- intent: arch_architectural_info
+  examples: |
+    - How this arch is made?
+    - What are the architectural features about the arch?
+    - How the arch is built?
+    - Describe me the construction of the arch.
+    
+- intent: arch_date
+  examples: |
+    - In which epoch the arch is placed?
+    - What is the historical context of the arch?
+    - When the arch was built?
+   
+- intent: arch_restoration
+  examples: |
+    - Which restorations were applied on the arch?
+    - Any actions of restoration on the arch?
+    
+- intent: arch_other_restoration
+  examples: |
+    - Other restorations of arch?
+    - Tell me about the others restorations.
+
+- intent: arch_function
+  examples: |
+    - What was the function of the arch at the time?
+    - For what purpose the arch was built?
+
+- intent: arch_labruzzi
+  examples: |
+    - How was the arch of Carlo Labruzzi?
+    - Tell me about the arch of Carlo Labruzzi
+
+- intent: arch_volturno_battle
+  examples: |
+    - Tell me about battle of Volturno.
+    - What is the link between the arch and the battle of Volturno?
+    
+- intent: conocchia
+  examples: |
+    - Tell me something about Conocchia.
+    - What is Conocchia?
+  
+- intent: conocchia_dimension
+  examples: |
+    - What are Conocchia dimension?
+    - How high is Conocchia?
+
+- intent: conocchia_architectural_info
+  examples: |
+    - What are the architectural features about Conocchia?
+    - How Conocchia is built?
+    - How Conocchia is made?
+
+- intent: conocchia_material
+  examples: |
+    - What are the materials of Conocchia?
+    - What material is the structure made of?
+    
+- intent: conocchia_restoration
+  examples: |
+    - Which restorations were applied on Conocchia?
+    - Tell me something about Conocchia restorations.
+    
+- intent: conocchia_labruzzi
+  examples: |
+    - How was Conocchia of Carlo Labruzzi?
+    - Tell me about the Conocchia of Carlo Labruzzi.
+
+- intent: cryptoporticus
+  examples: |
+    - What is cryptoporticus?
+    - Tell me something about cryptoporticus.
+ 
+- intent: cryptoporticus_date
+  examples: |
+    - In which epoch the cryptoporticus is placed?
+    - What is the Cryptoporticus historical context?
+    - When the cryptoporticus was built?
+ 
+- intent: cryptoporticus_dimension
+  examples: |
+    - What are cryptoporticus dimensions?
+    - How much is high and wide the Cryptoporticus?
+
+- intent: cryptoporticus_function
+  examples: |
+    - What was the function of the cryptoporticus?
+    - For what purpose the cryptoporticus was built?
+
+- intent: cryptoporticus_labruzzi
+  examples: |
+    - How was the Cryptoporticus of Carlo Labruzzi?
+    - Tell me about the cryptoporticus of Carlo Labruzzi.
+
+- intent: domus_confuleius
+  examples: |
+    - What is the domus of Confuleius?
+    - What is this house?
+
+- intent: domus_confuleius_date
+  examples: |
+    - In which epoch the domus of Confuleius is placed?
+    - What is the Domus of Confuleius historical context?
+
+- intent: domus_confuleius_architectural_info
+  examples: |
+    - What are the architectural features about domus of Confuleius?
+    - How domus of Confuleius is built?
+    - How domus of Confuleius is made?
+
+- intent: domus_confuleius_belonging_to
+  examples: |
+    - Who did the domus belong to?
+    - Whose domus was it?
+    - Who was the owner of the domus?
+
+- intent: domus_confuleius_inscriptions
+  examples: |
+    - What are the inscriptions of the domus?
+    - Tell me about domus inscriptions.
+    - What is written on the floor?
+
+- intent: domus_confuleius_floor_one
+  examples: |
+    - Describe me floor of the first room.
+    - What about floor of the first room?
+    
+- intent: domus_confuleius_floor_two
+  examples: |
+    - Describe me floor of the second room.
+    - What about floor of the second room?
+
+- intent: domus_via_orti
+  examples: |
+    - What is the domus in via degli Orti?
+    - What about the domus in via degli Orti?
+    
+- intent: domus_via_orti_date
+  examples: |
+    - In which epoch the domus is placed?
+    - What is historical context of this domus?
+
+- intent: domus_via_orti_architectural_info
+  examples: |
+    - What are the architectural features about domus in via degli Orti?
+    - How domus in via degli Orti is built?
+    - How domus in via degli Orti is made?
+    
+- intent: domus_via_orti_floor
+  examples: |
+    - Tell me about floor of the domus.
+    - Describe me the remains of pavement
+    - How the pavement is made?
+
+- intent: theater
+  examples: |
+    - Describe me the theater.
+    - Tell me something about the theater.
+    - Where is the theater?
+
+- intent: theater_state
+  examples: |
+    - Can we go back to how the theater was made?
+    - How was the theater originally made?
+
+- intent: theater_labruzzi
+  examples: |
+    - How was the theater of Carlo Labruzzi?
+    - Tell me about the theater of Carlo Labruzzi.
+
+- intent: theater_peculiaris
+  examples: |
+    - How was the theater of Lucceius Peculiaris?
+    - Tell me something about the theater of Lucceius Peculiaris.
+ 
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?

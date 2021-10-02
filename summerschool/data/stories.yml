@@ -1,0 +1,134 @@
+version: "2.0"
+
+stories:
+
+- story: main story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: my_location
+  - action: utter_my_location
+  - intent: info_path
+  - action: utter_info_path
+  - intent: goodbye
+  - action: utter_goodbye
+ 
+ 
+- story: arch story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: arch
+  - action: utter_arch
+  - intent: arch_state
+  - action: utter_arch_state
+  - intent: arch_dimension
+  - action: utter_arch_dimension
+  - intent: arch_architectural_info
+  - action: utter_arch_architectural_info
+  - intent: arch_date
+  - action: utter_arch_date
+  - intent: arch_restoration
+  - action: utter_arch_restoration
+  - intent: arch_other_restoration
+  - action: utter_arch_other_restoration
+  - intent: arch_function
+  - action: utter_arch_function
+  - intent: arch_labruzzi
+  - action: utter_arch_labruzzi
+  - intent: arch_volturno_battle
+  - action: utter_arch_volturno_battle
+  - intent: goodbye
+  - action: utter_goodbye
+  
+  
+- story: conocchia story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: conocchia
+  - action: utter_conocchia
+  - intent: conocchia_dimension
+  - action: utter_conocchia_dimension
+  - intent: conocchia_architectural_info
+  - action: utter_conocchia_architectural_info
+  - intent: conocchia_material
+  - action: utter_conocchia_material
+  - intent: conocchia_restoration
+  - action: utter_conocchia_restoration
+  - intent: conocchia_labruzzi
+  - action: utter_conocchia_labruzzi
+  - intent: goodbye
+  - action: utter_goodbye
+  
+  
+- story: cryptoporticus story
+  steps:
+  - intent: greet
+  - action: utter_greet  
+  - intent: cryptoporticus
+  - action: utter_cryptoporticus
+  - intent: cryptoporticus_date
+  - action: utter_cryptoporticus_date
+  - intent: cryptoporticus_dimension
+  - action: utter_cryptoporticus_dimension
+  - intent: cryptoporticus_function
+  - action: utter_cryptoporticus_function
+  - intent: cryptoporticus_labruzzi
+  - action: utter_cryptoporticus_labruzzi
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: domus confuleius story
+  steps:
+  - intent: greet
+  - action: utter_greet 
+  - intent: domus_confuleius
+  - action: utter_domus_confuleius
+  - intent: domus_confuleius_date
+  - action: utter_domus_confuleius_date
+  - intent: domus_confuleius_architectural_info
+  - action: utter_domus_confuleius_architectural_info
+  - intent: domus_confuleius_belonging_to
+  - action: utter_domus_confuleius_belonging_to
+  - intent: domus_confuleius_inscriptions
+  - action: utter_domus_confuleius_inscriptions
+  - intent: domus_confuleius_floor_one
+  - action: utter_domus_confuleius_floor_one
+  - intent: domus_confuleius_floor_two
+  - action: utter_domus_confuleius_floor_two
+  - intent: goodbye
+  - action: utter_goodbye
+  
+
+- story: domus via orti story
+  steps:
+  - intent: greet
+  - action: utter_greet 
+  - intent: domus_via_orti
+  - action: utter_domus_via_orti
+  - intent: domus_via_orti_date
+  - action: utter_domus_via_orti_date
+  - intent: domus_via_orti_architectural_info
+  - action: utter_domus_via_orti_architectural_info
+  - intent: domus_via_orti_floor
+  - action: utter_domus_via_orti_floor
+  - intent: goodbye
+  - action: utter_goodbye
+  
+  
+- story: theater story
+  steps:
+  - intent: greet
+  - action: utter_greet 
+  - intent: theater
+  - action: utter_theater
+  - intent: theater_state
+  - action: utter_theater_state
+  - intent: theater_labruzzi
+  - action: utter_theater_labruzzi
+  - intent: theater_peculiaris
+  - action: utter_theater_peculiaris
+  - intent: goodbye
+  - action: utter_goodbye

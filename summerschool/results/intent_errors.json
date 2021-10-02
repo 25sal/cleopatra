@@ -1,0 +1,42 @@
+[
+  {
+    "text": "good afternoon",
+    "intent": "goodbye",
+    "intent_prediction": {
+      "name": "greet",
+      "confidence": 0.5547294616699219
+    }
+  },
+  {
+    "text": "Which restorations were applied?",
+    "intent": "arch_restoration",
+    "intent_prediction": {
+      "name": "conocchia_restoration",
+      "confidence": 0.4977185130119324
+    }
+  },
+  {
+    "text": "Carlo Labruzzi",
+    "intent": "conocchia_labruzzi",
+    "intent_prediction": {
+      "name": "arch_labruzzi",
+      "confidence": 0.35762012004852295
+    }
+  },
+  {
+    "text": "Carlo Labruzzi",
+    "intent": "cryptoporticus_labruzzi",
+    "intent_prediction": {
+      "name": "arch_labruzzi",
+      "confidence": 0.35762012004852295
+    }
+  },
+  {
+    "text": "Carlo Labruzzi",
+    "intent": "theater_labruzzi",
+    "intent_prediction": {
+      "name": "arch_labruzzi",
+      "confidence": 0.35762012004852295
+    }
+  }
+]
