@@ -1,0 +1,88 @@
+version: "3.1"
+
+stories:
+
+
+- story: what_is_arch
+  steps:
+    - entities:
+      - topic: arch
+
+      intent: what_is   
+    - slot_was_set:
+        - topic: arch
+    - action:  utter_arch_Capua
+    - intent: where_is
+    - action: utter_where_is
+
+
+
+- story: what_is_conocchia
+  steps:
+    - entities:
+      - topic: conocchia
+      intent: what_is
+    - slot_was_set:
+        - topic: conocchia
+    - action: utter_conocchia
+    - intent: where_is
+    - action: utter_where_is
+
+
+- story: what_is_cryptoporticus
+  steps:
+    - entities:
+      - topic: cryptoporticus
+      intent: what_is
+    - slot_was_set:
+        - topic: cryptoporticus
+    - action: utter_cryptoporticus
+    - intent: where_is
+    - action: utter_where_is
+
+- story: what_is_theater
+  steps:
+    - entities:
+      - topic: theater
+      intent: what_is
+    - slot_was_set:
+        - topic: theater
+    - action: utter_theater
+    - intent: where_is
+    - action: utter_where_is
+
+- story: what_is_domus
+  steps:
+    - entities:
+      - topic: domus
+      intent: what_is
+    - slot_was_set:
+        - topic: domus
+    - action: utter_domus
+    - intent: where_is
+    - action: utter_where_is
+
+
+- story: what_is not set
+  steps:
+    - entities:
+      - topic: other
+      intent: what_is
+    - slot_was_set:
+        - topic: __other__
+    - action: utter_ask_topic
+    - intent: where_is
+    - action: utter_where_is
+
+
+- story: main story
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: my_location
+  - action: utter_my_location
+  - intent: info_path
+  - action: utter_info_path
+  - intent: goodbye
+  - action: utter_goodbye
+

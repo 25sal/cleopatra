@@ -1,0 +1,356 @@
+version: "3.1"
+
+nlu:
+- lookup: topic
+  examples: |
+    - arch
+    - conocchia
+    - domus confuleius
+    - theather
+    - cryptoporticus
+    - domus via orti
+
+
+- synonym: arch
+  examples: |
+    - Archi di Capua
+    - Arco di Adriano
+    - Arco Felice
+    - Arco di Capua
+    - Arco
+    - Arch of Capua
+
+- synonym: conocchia
+  examples: |
+    - Conocchia
+    - grave
+    
+
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hallo
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nicategoricalce day
+    - see you around
+    - bye bye
+    - see you later
+    
+- intent: my_location
+  examples: |
+    - Where am I
+    - Where are we
+    - What is this location
+
+- intent: info_path
+  examples: |
+    - What sites can I visit around here?
+    - What interesting things are there along the path?
+    - What is along the path?
+    - What can be seen here?
+
+- intent: what_is
+  examples: |
+    - What are [Archi di Capua]{"entity":"topic", "value":"arch"}?
+    - What is [Arco di Adriano]{"entity":"topic", "value":"arch"}?
+    - What is [Arco Felice]{"entity":"topic", "value":"arch"}?
+    - What is this [arch](topic)?
+    - Tell me about [Arco di Capua](topic)
+    - Tell me something about [Conocchia]{"entity":"topic", "value":"conocchia"}.
+    - What is [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    - What is a [cryptoporticus](topic)?
+    - What kind of construction is a [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}?
+    - What is a [domus]{"entity":"topic", "value":"domus"}?
+    - Tell me about the [domus]{"entity":"topic", "value":"domus"}.
+    - Describe me the [theater]{"entity":"topic", "value":"theater"}.
+    - Tell me about the  [theater]{"entity":"topic", "value":"theater"}.
+
+- intent: where_is
+  examples: |
+    - Where is the [Arco di Capua]{"entity":"topic", "value":"arch"} located?
+    - Where are  [Arco Felice]{"entity":"topic", "value":"arch"}?
+    - Where is the [Arco di Adriano]{"entity":"topic", "value":"arch"}?
+    - Where are  [Archi di Capua]{"entity":"topic", "value":"arch"}?
+    - Where is the [grave]{"entity":"topic", "value":"conocchia"} located?
+    - Where is the [grave]{"entity":"topic", "value":"conocchia"}?
+    - Where is located [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    - What is the position of [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    - Where is the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} located?
+    - Where is the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}?
+    - What is the position of [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}?
+    - Where is the [theater]{"entity":"topic", "value":"theater"}?
+    - Where is the [domus confuleius]{"entity":"topic", "value":"domus_confuleius"}?
+    - Where is it possible to visit the remains of the [domus confuleius]{"entity":"topic", "value":"domus_confuleius"}?
+    - Where I can visit the [domus confuleius]{"entity":"topic", "value":"domus_confuleius"}?
+    - Where is it?
+    - Where were the remains of the [theater]{"entity":"topic", "value":"theater"} found?
+    - Where did they find the first remains of the [theater]{"entity":"topic", "value":"theater"}?
+    - Where is the relief of Lucceius [Peculiaris]{"entity":"author", "value":"peculiaris"} kept?
+    - Where is the relief of Lucceius [Peculiaris]{"entity":"author", "value":"peculiaris"} saved?
+
+    
+
+
+- intent: ancient_location
+  examples: |
+    - How was the monument situated in the acient time ?
+    - Whwew was the monument situated in the acient time ?
+    - Where was the [arch]{"entity":"topic", "value":"arch"} located in the ancient landscape?
+    - Where was  located the [arch]{"entity":"topic", "value":"arch"}  in acient time?
+    - Where was  located the [arch]{"entity":"topic", "value":"arch"} in origin?
+    - Where did the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} fit into the ancient landscape?
+    - In which original place of the city was the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} situated?
+    - Where did the [theater]{"entity":"topic", "value":"theater"} fit into the ancient landscape?
+    - In which original place of the city was the [theater]{"entity":"topic", "value":"theater"} situated?
+
+- intent: ancient_meaning
+  examples: |
+    - What did a funerary monument represent in ancient times?
+    - What represented [Conocchia]{"entity":"topic", "value":"conocchia"} in origin?
+    - What represented [Conocchia]{"entity":"topic", "value":"conocchia"} long time ago?
+
+- intent: ancient_apparence
+  examples: |
+    - How was it originally?
+    - How was the  [arch]{"entity":"topic", "value":"arch"} originally?
+    - How was the  [arch]{"entity":"topic", "value":"arch"} in acient time?
+    - How was the  [arch]{"entity":"topic", "value":"arch"} characterized in ancient times?
+    - which were the characteristics of the  [arch]{"entity":"topic", "value":"arch"} in origin?
+
+- intent: dimension
+  examples: |
+    - How large was it originally?
+    - How big was the arch originally?
+    - What are [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}  dimensions?
+    - How much is high and wide the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} ?
+    - What are its measurements?
+    - How long and how high is the [arch]{"entity":"topic", "value":"arch"}?
+    - What are [arch]{"entity":"topic", "value":"arch"} dimensions?
+    - What are its measures?
+    - What are its dimensions?
+    - What are [Conocchia]{"entity":"topic", "value":"conocchia"} dimension?
+    - How high is [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    - What are the measures of the monument?
+   
+- intent: monument_date
+  examples: |
+    - In which epoch the [arch]{"entity":"topic", "value":"arch"}  is placed?
+    - What is the historical context of the [arch]{"entity":"topic", "value":"arch"} ?
+    - When the [arch]{"entity":"topic", "value":"arch"}  was built?
+    - When is the monument given?
+    - When as this monument built?
+    - When was the [Conocchia]{"entity":"topic", "value":"conocchia"} built?
+    - In which epoch the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} is placed?
+    - What is the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} historical context?
+    - When the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} was built?
+    - When is it given?
+    - In which epoch the domus of [Confuleius]{"entity":"topic", "value":"domus_confuleius"} is placed?
+    - What is the domus historical context?
+    - In which epoch the domus of [Orti]{"entity":"topic", "value":"domus_orti"} is placed?
+    - In which epoch the domus is placed?
+    - What is historical context of this domus?
+  
+
+- intent: monument_discovered
+  examples: |
+    - When was the [theater]{"entity":"topic", "value":"theater"} discovered?
+    - In which period they discovered the [theater]{"entity":"topic", "value":"theater"} ?
+    - When was the [theater]{"entity":"topic", "value":"theater"}  found?
+    - Until when were exploration trials of his remains conducted?
+    - When were the archaeological excavations completed?
+    - When was the [domus confuleius]{"entity":"topic", "value":"domus_confuleius"} discovered?
+    - When was the [domus orti]{"entity":"topic", "value":"domus_orti"} found?
+    - How was the domus discovered?
+    - How was it found the domus?
+
+
+- intent: monument_restoration
+  examples: |
+    - Any actions of restoration on the [arch]{"entity":"topic", "value":"arch"}?
+    - Has the monument been restored?
+    - Which restorations were applied on [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    - Tell me something about [Conocchia]{"entity":"topic", "value":"conocchia"} restorations.
+    - Has the monument undergone any restorations?
+    - Why is the architectural apparatus of the [theater]{"entity":"topic", "value":"theater"} not preserved?
+    - Why part of the [theater]{"entity":"topic", "value":"theater"} was not preserved?
+    - How many restorations has the monument undergone?
+    - How many restorations has the {"entity":"topic", "value":"arch"}  undergone?
+    - Did the {"entity":"topic", "value":"arch"} have many restorations?
+    - What restorations has it undergone?
+    - What kind of restorations have dealt with the {"entity":"topic", "value":"arch"}?
+    - Has the domus already undergone restorations in ancient times?
+    - Was the domus restored in ancient times?
+
+
+- intent: monument_preservation
+  examples: |
+    - What is its state of conservation?
+    - How much is the {"entity":"topic", "value":"arch"} preserved?
+    - What can we admire today of the {"entity":"topic", "value":"arch"}?
+    
+
+
+- intent: monument_material
+  examples: |
+    - How this [arch]{"entity":"topic", "value":"arch"} made
+    - How the  [arch]{"entity":"topic", "value":"arch"}  is built?
+    - In what building technique was it built?
+    - What are the building techniques used for its realization?
+    - How was the [Conocchia]{"entity":"topic", "value":"conocchia"} built?
+    - What are the building techniques used?
+    - Which techniques were used to build the  [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}?
+
+
+- intent: architecture_info
+  examples: |
+    - What are the architectural features about Conocchia?
+    - How [Conocchia]{"entity":"topic", "value":"conocchia"} is built?
+    - How [Conocchia]{"entity":"topic", "value":"conocchia"} is made?
+    - How was the [tomb]{"entity":"topic", "value":"conocchia"} structured?
+    - What is the brick work?
+    - What does it mean the brick work?
+    - What's about brick work?
+    - What are the architectural features about [domus of Confuleius]{"entity":"topic", "value":"domus_confuleius"}?
+    - How [domus confuleius]{"entity":"topic", "value":"domus_confuleius"} is built?
+    - How [domus confuleius]{"entity":"topic", "value":"domus_confuleius"} is made?
+    - How are the environments of [domus confuleius]{"entity":"topic", "value":"domus_confuleius"} structured?
+    - What are the architectural features about domus in via degli [Orti]{"entity":"topic", "value":"domus_orti"}?
+    - How domus in via degli [Orti]{"entity":"topic", "value":"domus_orti"} is built?
+    - How domus in via degli [Orti]{"entity":"topic", "value":"domus_orti"} is made?
+    - How was the domus structured?
+
+  
+- intent: monument_function
+  examples: |
+    - What was the function of the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}?
+    - For what purpose the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} was built?
+    - Over time, how many different uses has the monument undergone?
+    - How was used the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}  during years?
+    - How was used the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"}  in the past?
+    - What is a triumphal [arch]{"entity":"topic", "value":"arch"}?
+    - What's about a triuphal [arch]{"entity":"topic", "value":"arch"}?
+    - What was the function of the [arch]{"entity":"topic", "value":"arch"} at the time?
+    - How did the [arch]{"entity":"topic", "value":"arch"} fit into the ancient landscape?
+
+- intent: monument_depictions
+  examples: |
+    - Are there any depictions of the monument in antiquity?
+    - Are there any drawings of the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} in antiquity?
+    - Are there any depictions of the [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    - Do you know about ancient images of the [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    - Do they exist ancient representation of the [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    - Are there any ancient depictions of the monument?
+    - Do you know about ancient images of the [arch]{"entity":"topic", "value":"arch"}?
+    - Do they exist ancient representation of the [arch]{"entity":"topic", "value":"arch"}?
+    - Where is [Giovanni Fattori's]{"entity":"author", "value":"Fattori"} painting kept?
+    - Where is [Giovanni Fattori]{"entity":"author", "value":"Fattori"} paintins?
+    - Where is  [Fattori]{"entity":"author", "value":"Fattori"} painting kept?
+    - How was the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} of Carlo Labruzzi?
+    - Tell me about the [cryptoporticus]{"entity":"topic", "value":"cryptoporticus"} of Carlo [Labruzzi]{"entity":"author", "value":"labruzzi"}.
+    - What does the representation of Carlo [Labruzzi]{"entity":"author", "value":"labruzzi"} show?
+    - How was the [arch]{"entity":"topic", "value":"arch"} of Carlo [Labruzzi]{"entity":"author", "value":"labruzzi"}?
+    - Tell me about the [arch]{"entity":"topic", "value":"arch"} of Carlo [Labruzzi]{"entity":"author", "value":"labruzzi"}
+    - What does the depiction of the [arch]{"entity":"topic", "value":"arch"} by Carlo [Labruzzi]{"entity":"author", "value":"labruzzi"} look like?
+    - Tell me about the [theater]{"entity":"topic", "value":"theater"} of Lucceius [Peculiaris]{"entity":"author", "value":"peculiaris"}.
+    - What is represented on the Lucceius [Peculiaris]{"entity":"author", "value":"peculiaris"} relief?
+   
+- intent: monument_changes
+  examples: |
+    - Did the ancient monument look like the way we see it today?
+    - Is the  [arch]{"entity":"topic", "value":"arch"}  different from the ancient time?
+    - How did it change the  [arch]{"entity":"topic", "value":"arch"}  respect long time ago? 
+
+
+- intent: monument_epigraph
+  examples: |
+    - Is there a dedicatory epigraph of the [arch]{"entity":"topic", "value":"arch"} ?
+    - Does it exist an epigraph of the [arch]{"entity":"topic", "value":"arch"} ?
+    - What does the epigraph on the central pylon of the [arch]{"entity":"topic", "value":"arch"}  remember?
+    - What victory does the dedicatory epigraph refer to?
+    - What does the epigraph on the facade of the monument remember?
+    - What is about the epigraph on the facade of [Conocchia]{"entity":"topic", "value":"conocchia"}?
+    - What is about the text on the facade of [Conocchia]{"entity":"topic", "value":"conocchia"}?
+
+
+- intent: name_meaning
+  examples: |
+    - Why is this tomb called [conocchia]{"entity":"word", "value":"conocchia"} ?
+    - What is the reason for the name [conocchia]{"entity":"word", "value":"conocchia"} ?
+    - What does it mean [conocchia]{"entity":"word", "value":"conocchia"} ?  
+    - What does it mean  [triclinium]{"entity":"word", "value":"triclinium"} ?
+    - What's about the [triclinium]{"entity":"word", "value":"triclinium"} ?
+    - Tell me about the [triclinium]{"entity":"word", "value":"triclinium"}.
+    - What is the [cubiculum]{"entity":"word", "value":"cubiculum"}?
+    - Tell me about the [cubiculum]{"entity":"word", "value":"cubiculum"}?
+    - What is [opus sectile]{"entity":"word", "value":"opus sectile"}?
+    - What's about  [opus sectile]{"entity":"word", "value":"opus sectile"}?
+    - Tell me about [opus sectile]{"entity":"word", "value":"opus sectile"}.
+    - What is [sagum]{"entity":"word", "value":"sagum"}?
+    - What doe it mean [sagum]{"entity":"word", "value":"sagum"}?
+
+- intent: who_is
+  examples: |
+    - Who is this author?
+    - Who is this painter?
+    - Tell me about Lucceius [Peculiaris] {"entity":"author", "value":"peculiaris"}?
+    - Who was [Confuleius]{"entity":"author", "value":"Confuleius"}?
+    - Tell me about [Confuleius]{"entity":"author", "value":"Confuleius"}?
+    - Who is [Confuleius]{"entity":"author", "value":"Confuleius"}?
+
+
+- intent: first_pompeian_style
+  examples: |
+    - What is meant by "first Pompeian style"?
+    - What's about "first Pompeian style"?
+
+
+- intent: domus_rooms
+  examples: |
+    - How many rooms have been recognized?
+    - How many rooms belong to the domus?
+    - How many rooms the demus include?
+
+
+
+- intent: conocchia_enclosure
+  examples: |
+    - What was a funerary enclosure used for?
+    - What was [Conocchia]{"entity":"topic", "value":"conocchia"}  used for?
+
+
+- intent: theater_peculiaris_meaning
+  examples: |
+    - What does Lucceius Peculiaris relief mean?
+    - What is the Lucceius Peculiaris relief?
+
+
+- intent: can_visit
+  examples: |
+    - How was the burial chamber accessed?
+    - How it is possible to enter the burial chamber?
+    - How much of the  [domus confuleius]{"entity":"topic", "value":"domus_confuleius"} can be seen and visited?
+    - Which parts of the  [domus confuleius]{"entity":"topic", "value":"domus_confuleius"} can be seen and visited?
+    - May I visit the  [domus]{"entity":"topic", "value":"domus"}?
+    - How much of the  [domus]{"entity":"topic", "value":"domus"} can be seen and visited?
+    - Which parts of the  [domus]{"entity":"topic", "value":"domus"} can be seen and visited?
+    - May I visit the  [domus]{"entity":"topic", "value":"domus"}?

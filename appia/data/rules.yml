@@ -1,0 +1,13 @@
+version: "3.1"
+
+rules:
+
+- rule: Say goodbye anytime the user says goodbye
+  steps:
+  - intent: goodbye
+  - action: utter_goodbye
+
+- rule: where_is_rule
+  steps:
+    - intent: where_is
+    - action: utter_where_is

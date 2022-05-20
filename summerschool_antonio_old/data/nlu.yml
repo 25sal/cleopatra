@@ -1,0 +1,560 @@
+version: "2.0"
+
+nlu:
+- lookup: arch
+  examples: |
+    - Arco di Capua
+    - Archi di Capua
+    - Arco di Adriano
+    - arch
+    - Arco Felice
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hallo
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    
+- intent: my_location
+  examples: |
+    - Where am I
+    - Where are we
+
+- intent: info_path
+  examples: |
+    - What sites can I visit around here?
+    - What interesting things are there along the path?
+    - What is along the path?
+    - What can be seen here?
+
+- intent: arch_Capua
+  examples: |
+    - What are [Archi di Capua]{"entity":"topic"}?
+    - What is [Arco di Adriano]{"entity":"topic"}?
+    - What is [Arco Felice]{"entity":"topic"}?
+    - Tell me about [Arco di Capua]{"entity":"topic"}.
+
+- intent: arch_location
+  examples: |
+    - Where is the [Arco di Capua]{"entity":"topic"} located?
+    - Where is the [Arco di Capua]{"entity":"topic"}?
+    - Where is the [Arco di Adriano]{"entity":"topic"}?
+    
+- intent: arch_ancient_location
+  examples: |
+    - Where was the arch located in the ancient landscape?
+    - Where was  located the [arch]{"entity":"topic"} in acient time?
+    - Where was  located the [arch]{"entity":"topic"} in origin?
+
+    
+- intent: arch_state
+  examples: |
+    - What is its state of conservation?
+    - How much is the arch preserved?
+    - What can we admire today of the arch?
+
+- intent: arch_dimension
+  examples: |
+    - How long and how high is the arch?
+    - What are arch dimensions?
+    - What are its measures?
+    
+- intent: arch_originally
+  examples: |
+    - How was it originally?
+    - How was the arch originally?
+    - How was the arch in acient time?
+   
+- intent: arch_material
+  examples: |
+    - How this arch is made?
+    - How the arch is built?
+    - In what building technique was it built?
+
+- intent: brick_work
+  examples: |
+    - What is the brick work?
+    - What does it mean the brick work?
+    - What's about brick work?
+
+- intent: arch_date
+  examples: |
+    - In which epoch the arch is placed?
+    - What is the historical context of the arch?
+    - When the arch was built?
+    - When is the monument given?
+
+- intent: arch_restoration
+  examples: |
+    - Any actions of restoration on the arch?
+    - Has the monument been restored?
+    
+- intent: arch_restorations_number
+  examples: |
+    - How many restorations has the monument undergone?
+    - How many restorations has the arch  undergone?
+    - Did the arch hve many restorations?
+
+- intent: arch_restoration_kind
+  examples: |
+    - What restorations has it undergone?
+    - What kind of restorations have dealt with the arch?
+ 
+- intent: arch_today
+  examples: |
+    - Did the ancient monument look like the way we see it today?
+    - Is the arch different from the ancient time?
+    - How did it change the arch respect long time ago? 
+
+- intent: arch_ancient
+  examples: |
+    - How was the arch characterized in ancient times?
+    - which were the characteristics of the arch in origin?
+
+- intent: arch_function
+  examples: |
+    - What was the function of the arch at the time?
+    - How did the arch fit into the ancient landscape?
+
+- intent: arch_depictions
+  examples: |
+    - Are there any ancient depictions of the monument?
+    - Do you know about ancient images of the arch?
+    - Do they exist ancient representation of the arch?
+ 
+- intent: arch_labruzzi
+  examples: |
+    - How was the arch of Carlo Labruzzi?
+    - Tell me about the arch of Carlo Labruzzi
+    - What does the depiction of the arch by Carlo Labruzzi look like?
+
+- intent: arch_dedicatory_epigraph
+  examples: |
+    - Is there a dedicatory epigraph of the arch?
+    - Does it exist an epigraph of the arch?
+
+- intent: arch_epigraph
+  examples: |
+    - What does the epigraph on the central pylon of the arch remember?
+    - What victory does the dedicatory epigraph refer to?
+    
+- intent: arch_fattori
+  examples: |
+    - Where is Giovanni Fattori's painting kept?
+    - Where is Giovanni Fattori's paintins?
+
+- intent: arch
+  examples: |
+    - What is a triumphal arch?
+    - What's about a triuphal arch?
+    
+- intent: conocchia
+  examples: |
+    - Tell me something about [Conocchia]{"entity":"topic"}.
+    - What is [Conocchia]{"entity":"topic"}?
+  
+- intent: conocchia_name
+  examples: |
+    - Why is this tomb called "Conocchia"?
+    - What is the reason for the name "Conocchia"?
+    - What does it mean Conocchia?  
+  
+- intent: conocchia_location
+  examples: |
+    - Where is the grave located?
+    - Where is the grave?
+    - What is the position of Conocchia?
+  
+- intent: conocchia_architectural_info
+  examples: |
+    - What are the architectural features about Conocchia?
+    - How [Conocchia]{"entity":"topic"} is built?
+    - How [Conocchia]{"entity":"topic"} is made?
+    - How was the tomb structured?
+  
+- intent: conocchia_dimension
+  examples: |
+    - What are [Conocchia]{"entity":"topic"} dimension?
+    - How high is [Conocchia]{"entity":"topic"}?
+    - What are the measures of the monument?
+
+- intent: conocchia_ancient
+  examples: |
+    - What did a funerary monument represent in ancient times?
+    - What represented [Conocchi]{"entity":"topic"} in origin?
+    - What represented [Conocchia]{"entity":"topic"} long time ago?
+
+- intent: conocchia_enclosure
+  examples: |
+    - What was a funerary enclosure used for?
+    - What was [Conocchia]{"entity":"topic"} used for?
+
+- intent: conocchia_date
+  examples: |
+    - When is the monument given?
+    - When as this monument built?
+    - When was the [Conocchia]{"entity":"topic"} built?
+
+- intent: conocchia_material
+  examples: |
+    - What are the building techniques used for its realization?
+    - How was the [Conocchia]{"entity":"topic"} built?
+
+- intent: conocchia_chamber
+  examples: |
+    - How was the burial chamber accessed?
+    - How it is possible to eneter the burial chamber?
+
+- intent: conocchia_restoration
+  examples: |
+    - Which restorations were applied on Conocchia?
+    - Tell me something about Conocchia restorations.
+    - Has the monument undergone any restorations?
+
+- intent: conocchia_epigraph
+  examples: |
+    - What does the epigraph on the facade of the monument remember?
+    - What is about the epigraph on the facade of Conocchia?
+    - What is about the text on the facade of Conocchia?
+
+- intent: conocchia_depictions
+  examples: |
+    - Are there any depictions of the Conocchia?
+    - Do you know about ancient images of the conocchia?
+    - Do they exist ancient representation of the conocchia?
+
+- intent: cryptoporticus
+  examples: |
+    - What is a cryptoporticus?
+    - What kind of construction is a cryptoporticus?
+ 
+- intent: cryptoporticus_capua
+  examples: |
+    - Tell me about the cryptoporticus of ancient Capua.
+    - Give me additional information about the cryptoporticus of Capua.
+ 
+- intent: cryptoporticus_dimension
+  examples: |
+    - What are cryptoporticus dimensions?
+    - How much is high and wide the Cryptoporticus?
+    - What are its measurements?
+ 
+- intent: cryptoporticus_function
+  examples: |
+    - What was the function of the cryptoporticus?
+    - For what purpose the cryptoporticus was built?
+ 
+- intent: cryptoporticus_ancient
+  examples: |
+    - Where did the cryptoporticus fit into the ancient landscape?
+    - In which original place of the city was the cryptoporticus situated?
+
+- intent: cryptoporticus_uses
+  examples: |
+    - Over time, how many different uses has the monument undergone?
+    - How was used the cryptoporticus during years?
+    - How was used the cryptoporticusin in the past?
+
+- intent: cryptoporticus_location
+  examples: |
+    - Where is the cryptoporticus located?
+    - Where is the cryptoporticus?
+    - What is the position of cryptoporticus?
+ 
+- intent: cryptoporticus_date
+  examples: |
+    - In which epoch the cryptoporticus is placed?
+    - What is the Cryptoporticus historical context?
+    - When the cryptoporticus was built?
+    - When is it given?
+ 
+- intent: cryptoporticus_material
+  examples: |
+    - What are the building techniques used?
+    - Which techniques were used to build the cryptoporticus?
+    
+- intent: cryptoporticus_depictions
+  examples: |
+    - Are there any depictions of the monument in antiquity?
+    - Are there any drawings of the cryptoporticus in antiquity?
+   
+- intent: cryptoporticus_labruzzi
+  examples: |
+    - How was the Cryptoporticus of Carlo Labruzzi?
+    - Tell me about the cryptoporticus of Carlo Labruzzi.
+    - What does the representation of Carlo Labruzzi show?
+
+- intent: domus
+  examples: |
+    - What is a [domus]{"entity":"topic"}?
+    - Tell me about the domus.
+
+- intent: domus_confuleius_location
+  examples: |
+    - Where is it possible to visit the remains of the domus?
+    - Where may I visit the domus?
+
+- intent: first_pompeian_style
+  examples: |
+    - What is meant by "first Pompeian style"?
+    - What's about "first Pompeian style"?
+
+- intent: domus_confuleius_today
+  examples: |
+    - How much of the domus can be seen and visited?
+    - Which parts of the domus can be seen and visited?
+    - May I visit the domus?
+
+- intent: domus_confuleius_first_room
+  examples: |
+    - What hosts the first environment?
+    - What is in the first room?
+    - What is in the first space of the confuleius domus?
+
+- intent: domus_confuleius_architectural_info
+  examples: |
+    - What are the architectural features about domus of Confuleius?
+    - How domus of Confuleius is built?
+    - How domus of Confuleius is made?
+    - How are the environments structured?
+
+- intent: confuleius
+  examples: |
+    - Who was Confuleius?
+    - Tell me about Confuleius?
+    - Who is Confuleius?
+    
+- intent: confuleius_profession
+  examples: |
+    - What profession did he practice?
+    - What profession did confuleius practice?
+    - What was the Confuleius's job?
+
+- intent: confuleius_sagum
+  examples: |
+    - What is sagum?
+    - What doe it mean sagum?
+
+- intent: domus_confuleius_inscriptions
+  examples: |
+    - How many inscriptions are there in the domus?
+    - Ae there many inscriptions in the domus?
+
+- intent: domus_confuleius_inscriptions_location
+  examples: |
+    - Where are the domus inscriptions kept?
+    - Where are the domus inscriptions saved?
+
+- intent: domus_confuleius_floor_one
+  examples: |
+    - Describe me floor of the first room.
+    - What about floor of the first room?
+    - What does the floor of the first room look like?
+
+- intent: domus_confuleius_floor_two
+  examples: |
+    - Describe me floor of the second room.
+    - What about floor of the second room?
+    - What does the floor of the second room look like?
+
+- intent: domus_confuleius_discover
+  examples: |
+    - How was the domus discovered?
+    - How was it finde the demus?
+
+- intent: domus_confuleius_owner
+  examples: |
+    - How do we know that the domus was owned by the Publio Confuleio?
+    - How do you know the domus was of Publio Confuleio?
+    - How do you Publio Confuleio was the domus' owner?
+
+- intent: domus_confuleius_date
+  examples: |
+    - In which epoch the domus of Confuleius is placed?
+    - What is the domus historical context?
+
+- intent: domus_via_orti_discover
+  examples: |
+    - When was the domus discovered?
+    - When was the domus find?
+
+- intent: domus_via_orti_architectural_info
+  examples: |
+    - What are the architectural features about domus in via degli Orti?
+    - How domus in via degli Orti is built?
+    - How domus in via degli Orti is made?
+    - How was the domus structured?
+    
+- intent: domus_via_orti_rooms
+  examples: |
+    - How many rooms have been recognized?
+    - How many rooms belong to the domus?
+    - How many rooms the demus include?
+
+- intent: domus_via_orti_spa
+  examples: |
+    - How was the thermal sector structured?
+    - What is the architecture of the thermal sector?
+
+- intent: domus_via_orti_thermal_rooms
+  examples: |
+    - How were the thermal rooms decorated?
+    - Which decoration are used into the therml rooms?
+
+- intent: opus_sectile
+  examples: |
+    - What is opus sectile?
+    - What's about opus sectile?
+    - Tell me about the opus sectile.
+
+- intent: cubiculum
+  examples: |
+    - What is the cubiculum?
+    - Tell me about the cubiculum?
+
+- intent: domus_via_orti_cubiculum_floor
+  examples: |
+    - Tell me about cubiculum floor of the domus.
+    - Describe me the remains of cubiculum floor.
+    - What does the cubiculum floor look like?
+
+- intent: triclinium
+  examples: |
+    - What is triclinium?
+    - What's about the triclinium?
+    - Tell me about the triclinium.
+
+- intent: domus_via_orti_triclinium_floor
+  examples: |
+    - What does the triclinium floor look like?
+    - How is the floor of the triclinium floor?
+
+- intent: domus_via_orti_entrance
+  examples: |
+    - Has the original entrance to the domus been identified?
+    - Where it was  the original entrance to the domus?
+    - Which was the entrance of the domus?
+
+- intent: domus_via_orti_restoration
+  examples: |
+    - Has the domus already undergone restorations in ancient times?
+    - Was the domus restored in ancient times?
+
+- intent: domus_via_orti_date
+  examples: |
+    - In which epoch the domus is placed?
+    - What is historical context of this domus?
+    - When is it given?
+    
+- intent: theater
+  examples: |
+    - Describe me the [theater]{"entity":"topic"}.
+    - Tell me about the theater.
+
+- intent: theater_ancient
+  examples: |
+    - Where did the [theater]{"entity":"topic"} fit into the ancient landscape?
+    - In which original place of the city was the theather situated?
+
+- intent: theater_discover
+  examples: |
+    - When was the theater discovered?
+    - In which period they discovered the theater?
+    - When was the theater found?
+
+- intent: theater_state
+  examples: |
+    - Why is the architectural apparatus of the [theater]{"entity":"topic"} not preserved?
+    - Why part of the [theater]{"entity":"topic"} was not preserved?
+
+- intent: theater_remains
+  examples: |
+    - Until when were exploration trials of his remains conducted?
+    - When were the archaeological excavations completed?
+    
+
+- intent: theater_remains_location
+  examples: |
+    - Where were the remains of the theater found?
+    - Where did they find the first remains of the theater?
+
+- intent: theater_labruzzi
+  examples: |
+    - What does the depiction of Carlo Labruzzi show?
+    - What is depicted in Carlo Labruzzi's drawing?
+
+- intent: theater_labruzzi_meaning
+  examples: |
+    - What emerges from Carlo Labruzzi's drawing?
+    - What can be observed from Labruzzi's drawing?
+
+- intent: theater_peculiaris
+  examples: |
+    - Tell me about the theater of Lucceius Peculiaris.
+    - What is represented on the Lucceius Peculiaris relief?
+
+- intent: theater_peculiaris_meaning
+  examples: |
+    - What does Lucceius Peculiaris relief mean?
+    - What is the Lucceius Peculiaris relief?
+
+- intent: theater_peculiaris_location
+  examples: |
+    - Where is the relief of Lucceius Peculiaris kept?
+    - Where is the relief of Lucceius Peculiaris saved?
+
+- intent: lucceius_peculiaris
+  examples: |
+    - Who is Lucceius Peculiaris?
+    - What can you tell about Lucceius Peculiaris?
+    - Tell me about Lucceius Peculiaris?
+
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+
+
+- intent: EXTERNAL_page_change
+  examples: |
+    - page change [https://parsec2.unicampania.it/cleopatra/cleodemo/summerschool/index.json/canvas/0](page_url)
+    
+- intent: EXTERNAL_zoom
+  examples: |
+    - zoom [0.02](zoom_factor) x [26](zoom_x) y [82](zoom_y)
+    - zoom [0.0008274](zoom_factor) x [291](zoom_x) y [470](zoom_y)
+    
+- intent: EXTERNAL_pan
+  examples: |
+    - panning x [31](pan_x) y [56](pan_y)
+    - panning x [201](pan_x) y [428](pan_y)
+
+- intent: EXTERNAL_annotation
+  examples: |
+    - annotation [https://iiif.harvardartmuseums.org/annotations/76410](annotation_url)
+    

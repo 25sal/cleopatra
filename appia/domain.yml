@@ -1,0 +1,144 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - my_location
+  - info_path
+  - what_is
+  - where_is
+
+entities:
+  - page_url
+  - zoom_factor
+  - zoom_x
+  - zoom_y
+  - pan_x
+  - pan_y
+  - annotation_url
+  - topic
+  - author
+
+
+slots:
+  page_url:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: page_url
+  zoom_factor:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: zoom_factor
+  zoom_x:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: zoom_x
+  zoom_y:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: zoom_y
+  pan_x:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: pan_x
+  pan_y:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: pan_y
+  annotation_url:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: annotation_url
+  topic:
+    type: categorical
+    values: 
+    - arch
+    - conocchia
+    - domus_orti
+    - domus_confuleuis
+    - theater
+    - cryptoporticus
+    initial_value: arch
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: topic
+  author:
+    type: categorical
+    values: 
+    - labruzzi
+    - fattori
+    initial_value: labruzzi
+    influence_conversation: true
+    mappings:
+    - type: from_entity
+      entity: author
+
+
+responses:
+  utter_greet:
+  - text: "Hallo! Ask me something."
+  
+  utter_goodbye:
+  - text: "Bye!"
+  
+  utter_my_location:
+  - text: "You are on the Appia way, the red point is where you are!"
+
+  utter_ask_topic:
+  - text: "What topic you are insterested in? (Arch, connocchia, domus, theather)"
+
+  utter_info_path:
+  - text: "You can visit: Arco of Adriano, Conocchia, Cryptoporticus, Domus of Confuleius, Domus in Via degli Orti, Theater. Ask me what you would like to know!"
+  
+  utter_arch_Capua:
+  - text: "It is a triumphal arch located along the Via Appia: a sort of ideal entrance to the ancient city of Capua."
+  - text: "Architectural monument with a celebratory and honorary role."
+  
+
+  utter_conocchia:
+  - text: "It is a funerary monument along the ancient Appian Way."
+
+  utter_cryptoporticus:
+  - text: "It is a building consisting, as the name suggests, of a covered portico with masonry vaults and illuminated by loopholes placed at the top."
+ 
+  utter_theater:
+  - text: "The theater had an east-facing cavea and its remains were visible at least until the early nineteenth century and then partially explored during public works in 1900. Remains of the cavea's substructures were found in 1942 in the courtyard of the Pica barracks."
+  
+  utter_domus:
+  - text: "It is a home, within the city, of wealthy Roman families."
+ 
+
+  utter_where_is:
+  - condition:
+      - type: slot
+        name: topic
+        value: arch
+    text: "In S. Maria Capua Vetere, along Corso Aldo Moro."
+  - condition:
+      - type: slot
+        name: topic
+        value: conocchia
+    text: "In the municipality of Curti (CE), along the current Via Nazionale Appia which follows the ancient route of the ancient Via Appia."
+  - condition:
+      - type: slot
+        name: topic
+        value: cryptoporticus
+    text: "In S. Maria Capua Vetere, along Corso Aldo Moro, in an elevated position with respect to the road level."
+  - condition:
+      - type: slot
+        name: topic
+        value: theater
+    text: "In the courtyard of the Pica Barracks in S. Maria Capua Vetere."
+  - text: "I do not know where {topic} is?"
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

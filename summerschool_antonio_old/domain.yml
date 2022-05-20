@@ -1,0 +1,136 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet
+- arch
+- conocchia
+- goodbye
+- theater
+- my_location
+- info_path
+- arch_state
+- arch_dimension
+- arch_architectural_info
+- arch_date
+- arch_restoration
+- arch_other_restoration
+- arch_function
+- arch_labruzzi
+- arch_volturno_battle
+- conocchia_dimension
+- conocchia_architectural_info
+- conocchia_material
+- conocchia_restoration
+- conocchia_labruzzi
+- cryptoporticus
+- cryptoporticus_date
+- cryptoporticus_dimension
+- cryptoporticus_function
+- cryptoporticus_labruzzi
+- domus_confuleius
+- domus_confuleius_date
+- domus_confuleius_architectural_info
+- domus_confuleius_belonging_to
+- domus_confuleius_inscriptions
+- domus_confuleius_floor_one
+- domus_confuleius_floor_two
+- domus_via_orti
+- domus_via_orti_date
+- domus_via_orti_architectural_info
+- domus_via_orti_floor
+- theater_state
+- theater_labruzzi
+- theater_peculiaris
+- bot_challenge
+responses:
+  utter_greet:
+  - text: Hallo! Ask me something.
+  utter_goodbye:
+  - text: Bye!
+  utter_my_location:
+  - text: You are on the Appia way, the red point is where you are!
+  utter_info_path:
+  - text: 'You can visit: Arco of Adriano, Conocchia, Cryptoporticus, Domus of Confuleius, Domus in Via degli Orti, Theater. Ask me what you would like to know!'
+  utter_arch:
+  - text: Located along the Via Appia, just before the entrance to the ancient city of Capua, is a triumphal arch known by various names such as Arch of Hadrian, Arches of Capua or Arco Felice. The monument is dated to the Flavian era or towards the beginning of the second century a.D. The chronological considerations, however, have been advanced on the basis of architecture, since there is a lack of dedicatory epigraph and decorative elements.
+  utter_arch_state:
+  - text: We had originally three archways, but only one of these remains today, together with three of the four pillars that made it up. The current state of the monument, however, appears different from the ancient one not only due to the ruin of the structures over time, but also due to the numerous restorations, which have strongly affected the original appearance.
+  utter_arch_dimension:
+  - text: The arch reaches a height of 10 m and a width of 18.5 m.
+  utter_arch_architectural_info:
+  - text: Made with a brick facing, it was probably covered with applied architectural elements, such as cornices and columns, as suggested by stone remains in white limestone, incorporated into the structure, and the shutter holes still visible. The pillars rest on an enlarged base made of parallelepiped blocks in white limestone and are distinguished by slender elongated and arched niches. Of considerable interest for the study of the original form of the arch are the drawings depicting it between the eighteenth and nineteenth centuries, which can, at times, help to provide details, of which otherwise would not be known. Over time, various artists and travelers have depicted the monument as it appeared to their eyes, sometimes in a more picturesque and suggestive way, others more realistic. Particular artistic and documentary value is attributed to the design of the arch by Carlo Labruzzi.
+  utter_arch_date:
+  - text: The monument is dated to the Flavian era or towards the beginning of the second century a.D. The chronological considerations, however, have been advanced on the basis of architecture, since there is a lack of dedicatory epigraph and decorative elements.
+  utter_arch_restoration:
+  - text: The most important restoration was that carried out by the Bourbons in the mid-nineteenth century due to the state of decay and the numerous lacerations that compromised the statics. In a first restoration project it was proposed that the works (shoring interventions and generalized compensation) be carried out paying attention to the differentiation of techniques, so as to be able to recognize “the old from the new”. Subsequently, however, due to the deterioration of the conditions of the structure, a more radical intervention was proposed in a second project aimed at a complete re-wrapping of the brick construction. In addition, it was indicated to put in place a covering in broad bricks in the upper part to ensure greater protection from atmospheric agents. The proposed works, known thanks to archival documentation, are recognizable in the conditions of the arch as it appears today. Over time, however, the monument has received further restoration works.
+  utter_arch_other_restoration:
+  - text: Another restoration took place in the years following 1883 to remedy the damage caused by the battle of the Volturno in 1860 while other interventions were carried out between 1945 and 1953-55 following the events of World War II. On that occasion, various infill walls were carried out, demolition of part of the previous restorations and a partial reconstruction of the surviving vault; these restorations also involved the re-wrapping of the plinths in polygonal tuff blocks. A last restoration, carried out in the seventies, helped to flatten the top of the surviving arch on the side pillars.
+  utter_arch_function:
+  - text: 'The monument probably occupied a prominent position in the ancient landscape: it stood on the road at the end of the long straight that the Appia led from Casilinum. In this way, placed at the top of a climb, it opened the view on the ancient city of Capua, constituting a sort of ideal entrance.'
+  utter_arch_labruzzi:
+  - text: Carlo Labruzzi's drawing was drawn up on the occasion of the journey along the Appian Way which he undertook in the autumn of 1789 from Rome to Benevento. The artist's care lies in the documentation of the monument as it appeared and in the choice of the frame that would be able to highlight the construction features. The brick structure, the two rows of blocks below each of the pillars, the ladder and the niche that housed the sacred shrine are depicted on the arch, taken three-quarters from the side of the entrance to the city.
+  utter_arch_volturno_battle:
+  - text: In 1860, in front of the arch of Capua, an armed clash took place between the Garibaldi volunteers and the Bourbon troops. The event was part of the so-called battle of the Volturno, fought from 26 September to 2 October 1860, near the Volturno river, during the expedition of the Thousand, in order to block the advance of Garibaldi and reoccupy the Kingdom of the Two Sicilies. In the painting, preserved in the Gallery of Modern Art - Palazzo Pitti in Florence, it is possible to admire the remains of the monumental arch that was the backdrop to one of the armed clashes. In memory of this battle, a marble slab was placed on the central pillar of the arch to celebrate Garibaldi's victory in this place.
+  utter_conocchia:
+  - text: Conocchia is a monumental tomb, located along the ancient Via Appia in the municipality of Curti, which is dated between the end of the Republican age and the beginning of the imperial age.
+  utter_conocchia_dimension:
+  - text: The sepulcher is 16.6 m high overall and appears today embedded in the ground, since its original floor is about 1.5 m lower than the current floor.
+  utter_conocchia_architectural_info:
+  - text: The monument, consisting of a quadrangular base that houses the burial chamber, is surmounted by a slender parallelepiped characterized, on all four sides, by exedra wings containing aedicules and framed by round angular pillars. Above it rises a cylindrical body, always slender, characterized by a slightly wider smooth base and by a tambour with semi-columns comprising flat niches, covered in arches; a small dome crowns the top. The burial chamber can be accessed via an entrance that restores the old one, on the front of the ancient Via Appia. The room, preceded by a small entrance, is quadrangular in shape with walls that house three niches on each side, except for the entrance that houses two, one on each side of the door. The sepulcher probably did not look directly onto the ancient road, but must have been preceded by a funerary enclosure, the remains of which could be preserved under the current roadway of the road. Thanks to its architectural form and location along the Via Appia, the Conocchia attracted the attention of artists and travelers as early as the sixteenth century and especially in the eighteenth and nineteenth centuries. In the sixteenth century a drawing by Pirro Ligorio seems to propose the representation of this ancient sepulcher. Among the various drawings, that of Carlo Labruzzi, executed in 1789 during his journey along the Appian Way, is of particular documentary interest.
+  utter_conocchia_material:
+  - text: The structure is in concrete with a facing in uncertain work with slightly rounded limestone blocks; there is also the brick that marks the frames at different heights, highlighting the different buildings, and is also used in the walls of the aedicules of the central parallelepiped.
+  utter_conocchia_restoration:
+  - text: The current appearance and conservation of the monument owe a lot to the restoration promoted by Ferdinand IV, as the epigraph recalls, affixed to the facade at the top of the door in the central body. The restoration, carried out with great care, is evident above all in the shooting of the uncertain work, which closes the guttings and integrates the shortcomings, reshapes the frames and covers the top with a new cap. Another restoration was carried out between the 1950s and 60s of the twentieth century, where the photographic documentation from 1957 highlights the shortcomings in some points of the walls that appear, however, compensated for in images from 1962.
+  utter_conocchia_labruzzi:
+  - text: Carried out in 1789 during his journey along the Appian Way, the drawing by Carlo Labruzzi is of particular documentary interest as it takes up the tomb at a time prior to the Bourbon restoration. The artist's care lies in the documentation of the monument as it appeared and in the choice of the frame that would be able to highlight the construction features. The double frame is depicted on the top of the columns of the second parallelepiped; the ovoli frame under the notched frame of the base nut; the base of the half-columns of the upper drum and the double frame with intermediate cavity on the top of the same drum. All these details are not found in the current configuration of the monument.
+  utter_cryptoporticus:
+  - text: The cryptoporticus, in ancient times, was defined by a grandiose terrace overlooking the Via Appia; the latter ran through the city with a straight path, perpetuated approximately by Corso Aldo Moro. The cryptoporticus forms the basement of a large quadrangular building, with two floors, arranged around a large internal courtyard and defined by two ramps that emphasize its elevated position above street level. The cryptoporticus, in reticulated work with some sections in brick work, is part of an important urban and monumental context of the ancient city of Capua in the second half of the 1st century b.C.
+  utter_cryptoporticus_date:
+  - text: The cryptoporticus is part of an important urban and monumental context of the ancient city of Capua in the second half of the 1st century b.C.
+  utter_cryptoporticus_dimension:
+  - text: The ancient building has three arms with a single nave covered by barrel vaults; the side ones are 107 m long while the bottom one is 90.7 m long and all retain a width of 7.10 m.
+  utter_cryptoporticus_function:
+  - text: The cryptoporticus has been affected by numerous interventions and different destinations over time, while still retaining an important role in the urban fabric of the city. In the early 1600s, a convent was erected in correspondence with an arm of the cryptoporticus, with an adjoining chapel, dedicated to San Francesco di Paola. In 1700 stables were installed there to house a regiment of the royal cavalry. The cryptoporticus is depicted in a drawing by Carlo Labruzzi from the end of the eighteenth century. The convent, destroyed by an earthquake and a fire, was suppressed in 1810 and with it also the part reserved for the stables. Between the beginning and the mid-1800s, the transformation into a prison took place, which constitutes the most incisive and striking phase of the restructuring of the complex. The building was the most important central prison in Terra di Lavoro until its disposal in the late 1900s, when the complex became the seat of the Faculty of Letters and Philosophy of the Second University of Naples until 2016.
+  utter_cryptoporticus_labruzzi:
+  - text: "The cryptoporticus is depicted in a drawing by Labruzzi from the end of the eighteenth century, before the works for the construction of the prison. The drawing shows a non-ancient entrance in the foreground, made by obliterating reticulated opus structures on the left and brickwork on the right, where the ferrule of an arch also in brick buffered in non-ancient blocks is also outlined. One of the arms is highlighted, illuminated by windows on the right side only, with the headboard on the bottom. The only perplexity regarding Labruzzi's design: the absence of mangers in the cryptoporticus, pertinent to the chivalry of the eighteenth century, however, if we want to give credit to the artist, they must be considered made during the nineteenth century."
+  utter_domus_confuleius:
+  - text: In 1955, on the occasion of works for the construction of a building along Corso Aldo Moro, which would trace a part of the route of the ancient Via Appia, two underground rooms were found belonging to a domus of the late Republican age (1st century BC). The domus constitutes an important testimony of the social fabric of ancient Capua in the first half of the first century BC, in which the subordinate classes, through the production and trade of goods, held economic power.
+  utter_domus_confuleius_date:
+  - text: The domus is an important testimony of the social fabric of ancient Capua in the first half of the first century b.C., in which the subordinate classes, through the production and trade of goods, held economic power.
+  utter_domus_confuleius_architectural_info:
+  - text: 'The rooms of the domus, side by side and communicating with each other, rectangular in shape covered by barrel vaults, are accessible via a double flight staircase separated by a landing. The walls and vaults of the rooms, each equipped with a circular skylight on the top, are largely covered with plaster painted in the manner of the so-called early Pompeian style. The first of the rooms has a rectangular basin with a circular well next to it and is separated from the next by an arched door. Both rooms retain splendid floors inside which inscriptions are also inserted. The floor carpets of the two rooms are in perfect condition: a brick background houses mosaics with black and white mosaic tiles that define geometric and vegetal shapes.'
+  utter_domus_confuleius_belonging_to:
+  - text: 'Thanks to the floor inscription in the second room, we know that the domus belonged to a certain Publius Confuleio, perhaps a slave freed to the gens Confuleia, by profession sagarius, or the one who sold and probably worked the sagum, a heavy wool cloak used in military field. The hypothesis that Publio Confuleio, in addition to the sale, was also involved in the processing of the sagum, is suggested by the presence of the rectangular basin and the circular well in one of the two rooms. From the inscription emerges the pride of a freedman who wanted to leave his mark, to anyone who entered the domus, of his social ascent: a man who from slave to freedman built his house from the foundations to the top, also paying attention to the care of the environments dedicated to work.'
+  utter_domus_confuleius_inscriptions:
+  - text: "Thanks to the floor inscription in the second room, we know that the domus belonged to a certain Publius Confuleio, perhaps a slave freed to the gens Confuleia. From the inscription emerges the pride of a freedman who wanted to leave his mark, to anyone who entered the domus, of his social ascent: a man who from slave to freedman built his house from the foundations to the top, also paying attention to the care of the environments dedicated to work. The inscription also shows the name of the architect of the domus, Titus Safinus Pollio, and his social status. Immediately after the transition between the first and the second environment there is also another inscription: a well-wishing inscription 'I wish all things would go well'."
+  utter_domus_confuleius_floor_one:
+  - text: 'In the first room a narrow rectangular band with circles that include central crosses divides two different types of floor decoration: on one side a rectangular carpet of rhombuses with white tiles framed, in turn, by black and white tiles, on the other an expanse of crocette encloses a square surrounded at the four corners by plant motifs with a shield with a pinwheel motif in the center, included in an external meander band.'
+  utter_domus_confuleius_floor_two:
+  - text: 'In the second room the inscription by Publio Confuleio divides the two types of floor decoration: on one side a carpet of hexagons each enclosing a cross, on the other, after a plant-themed band decoration, follows a carpet of swastika meanders that frame a large central rose window.'
+  utter_domus_via_orti:
+  - text: At the beginning of the 1970s, on the occasion of the works for the construction of a school building, the remains of a large Roman domus came to light. The structure is located near the current Corso Aldo Moro, which would trace part of the route of the ancient Via Appia. The life of the domus began in the imperial age and continued in late antiquity (up to the fifth century a.D.) undergoing numerous renovations to enrich and embellish the structure, evidence of the owner's wealth and the re-flowering of the ancient city of Capua.
+  utter_domus_via_orti_date:
+  - text: The life of the domus began in the imperial age and continued in late antiquity (up to the fifth century a.D.) undergoing numerous renovations to enrich and embellish the structure, evidence of the owner's wealth and the re-flowering of the ancient city of Capua.
+  utter_domus_via_orti_architectural_info:
+  - text: 'The domus is accessed from the rear, through the garden, as the main entrance has not been identified. The complex is divided into numerous rooms and features a spa sector facing a porticoed garden with fountain and nymphaeum. Inside the domus there are several remains of flooring: these are brick, tessellated and sectilia orders.'
+  utter_domus_via_orti_floor:
+  - text: The spa rooms had both floors and walls covered in white, black and polychrome marble. In the frigidarium you can observe a portion of mosaic with white tiles while in the cubiculum a mosaic floor that has a geometric decoration in black and white that recalls floral motifs. In the triclinium there is a floor in opus sectile with a geometric design. The marbles used, African yellow, pavonazzetto, red cipollino, create suggestive plays of color and the accuracy of the installation further enhances their richness and uniqueness. This type of floor, in terms of technique and materials, has been traced back to late antiquity, when the domus underwent renovations and redecorations (4th century a.D.).
+  utter_theater:
+  - text: The remains of the theater are not preserved, however it is known thanks to a rich antiquarian tradition. The first mention of the monument is due to Mazzocchi who in 1727 reported its location near the cryptoporticus and the Tower of S. Erasmo, complaining of the deterioration of the structures already in his time. The structures were never completely buried and this has favored all the stripping works of its architectural apparatus.
+  utter_theater_state:
+  - text: The theater had an east-facing cavea and its remains were visible at least until the early nineteenth century and then partially explored during public works in 1900. Remains of the cavea's substructures were found in 1942 in the courtyard of the Pica barracks. Other sources from which it is possible to portray the theater are the drawing by the artist Carlo Labruzzi and the relief by Lucceius Peculiaris (a building contractor between the end of the 2nd and 3rd centuries a.D. who restored the proscenium of the theater), which attests to the close topographical connection between the Capitolium and the theater.
+  utter_theater_labruzzi:
+  - text: The artist's drawing, on the occasion of his journey along the Via Appia, shows how the theater structures were then conspicuous despite the destruction complained of in the writings of Mazzocchi and Pratilli. The artist's care lies in the documentation of the monument as it appeared and in the choice of the frame that would be able to highlight the construction features. Labruzzi's drawing shows a large preserved portion of ambulatory in brick work, probably with a double order, leaning against a two-storey house which, due to its semicircular shape, was supposed to insist on and incorporate other remains of the monument.
+  utter_theater_peculiaris:
+  - text: The figurative relief by Lucceius Peculiaris portrays on the left a machine, activated by men, which lifts a monolithic column and next to it a seated worker who carves a capital. At the center of the relief is the Capitoline triad with Minerva standing with a helmet, Jupiter on the throne with rod and lightning in his hands, Diana with bow and quiver and Juno with patera and cornucopia. On the right there is a snake, the Genius theatri, as also indicated in the epigraphic text below. The elements depicted show a close relationship of continuity between the temple and the theatrical building.
+  utter_bot_challenge:
+  - text: I am a bot, powered by Rasa.
+  utter_default:
+  - text: I didn't understand. Can you be more specific?
+actions:
+- utter_arch
+- utter_conocchia
+- utter_greet
+- utter_theater
